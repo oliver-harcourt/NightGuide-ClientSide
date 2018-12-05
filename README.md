@@ -73,8 +73,8 @@ The idea of the app is to create a **"stargazing - astronomical"** style app for
 | --- | --- | --- | --- | --- |
 | Get | /api/lookouts | No | Get the list of lookout points | Array of Objects (object = coords) |
 | Get | /api/lookouts/:id | No | Get the specific lookout point based on the ID | Object (object = coords) |
-| Get | /api/constelations | No | Get the list of constelations points | Array of Objects (object = coords) |
-| Get | /api/constelations/:id | No | Get the specific constelation based on the ID| Object (object = coords) |
+| Get | /api/constellations | No | Get the list of constellations points | Array of Objects (object = coords) |
+| Get | /api/constellations/:id | No | Get the specific constellation based on the ID| Object (object = coords) |
 | Get | /api/planets | No |Get the list of planets points| Object (object = coords) |
 | Get | /api/planets/:id | No | Get the specific planets based on the ID| Object (object = coords) |
 | Get | /api/weather | No | Get an object with an array of current weather properties based on what city you search.. | Array of Objects (object = coords) |
