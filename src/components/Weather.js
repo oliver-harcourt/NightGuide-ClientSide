@@ -1,7 +1,12 @@
 import React from "react";
+import { Text, View } from "react-native";
 
 export default class Weather extends React.Component {
   render() {
-    return <Text>Weather</Text>;
+    return (
+      <View>
+        <Text>Weather</Text>
+      </View>
+    );
   }
 }

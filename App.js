@@ -19,9 +19,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View>
-        {/* <BrooklynMap /> */}
+        {/* <BrooklynMap />
         <ConstellationDetails />
-        {/* <ConstellationList />
+        <ConstellationList /> */}
         <Header />
         <InstructionContainer />
         <Landing />
@@ -31,7 +31,7 @@ export default class App extends React.Component {
         <PlanetDetails />
         <PlanetList />
         <Weather />
-        <WelcomeInstruction /> */}
+        <WelcomeInstruction />
       </View>
     );
   }

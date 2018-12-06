@@ -1,7 +1,12 @@
 import React from "react";
+import { Text, View } from "react-native";
 
 export default class PlanetDetails extends React.Component {
   render() {
-    return <Text>PlanetDetails</Text>;
+    return (
+      <View>
+        <Text>PlanetDetails</Text>
+      </View>
+    );
   }
 }
