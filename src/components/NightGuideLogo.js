@@ -1,7 +1,12 @@
 import React from "react";
+import { Text, View } from "react-native";
 
 export default class NightGuideLogo extends React.Component {
   render() {
-    return <Text>NightGuideLogo</Text>;
+    return (
+      <View>
+        <Text>NightGuideLogo</Text>
+      </View>
+    );
   }
 }

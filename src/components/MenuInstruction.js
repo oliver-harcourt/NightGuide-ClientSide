@@ -1,7 +1,12 @@
 import React from "react";
+import { Text, View } from "react-native";
 
 export default class MenuInstruction extends React.Component {
   render() {
-    return <Text>MenuInstruction</Text>;
+    return (
+      <View>
+        <Text>MenuInstruction</Text>
+      </View>
+    );
   }
 }

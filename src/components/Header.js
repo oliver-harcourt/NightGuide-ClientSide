@@ -1,7 +1,12 @@
 import React from "react";
+import { Text, View } from "react-native";
 
 export default class Header extends React.Component {
   render() {
-    return <Text>Header</Text>;
+    return (
+      <View>
+        <Text>Header</Text>
+      </View>
+    );
   }
 }
