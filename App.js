@@ -36,13 +36,3 @@ const App = createAppContainer(RootStack)
 
 
 export default App
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <View>
-      
-      </View>
-    );
-  }
-}
