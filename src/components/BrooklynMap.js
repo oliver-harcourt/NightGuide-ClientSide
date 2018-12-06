@@ -1,10 +1,13 @@
 import React from 'react';
 import { MapView } from 'expo'
 
+import { MapApi } from '../../data/MapApi'
 
-export default class BrooklynMap extends React.Component {
+export default class BooklynMap extends React.Component {
+
     render() {
         return (
+
             <MapView
                 style={{ flex: 1 }}
                 initialRegion={{
