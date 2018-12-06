@@ -2,8 +2,7 @@ import React from "react";
 import constellations from '../../data/constellations'
 
 import {
-  View,
-  Text
+  View
 } from 'react-native'
 
 import {
@@ -23,7 +22,7 @@ export default class ConstellationList extends React.Component {
                 avatar={{uri:constellation.icon}}
                 key={constellation.name}
                 title={constellation.name}
-                // leftIcon={{ name: constellation.image }}
+                subtitle={constellation.translation}
               />
             ))
           }
