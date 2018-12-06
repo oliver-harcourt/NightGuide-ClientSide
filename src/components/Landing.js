@@ -3,7 +3,7 @@ import { Alert, StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'reac
 import { Spinner } from 'native-base'
 
 import NightGuideLogo from './NightGuideLogo'
-import NavBar from './Navbar/NavBar'
+
 
 class Landing extends React.Component {
   state = {
@@ -13,8 +13,15 @@ class Landing extends React.Component {
     setTimeout(() => {
       this.setState({ login: true })
     }, 3000)
-    Alert.alert('You are logged in!')
-    evt.preventDefault()
+
+  }
+  _goPage = () => {
+    this.props.navigation.navigate('Home')
+  }
+
+  _bindPressFunc = async () => {
+    this._onPressButton();
+    await this._goPage()
   }
   render() {
     return (
@@ -30,10 +37,10 @@ class Landing extends React.Component {
           )}
           <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
-          <TouchableOpacity style={styles.button} onPress={this._onPressButton}>
+          <TouchableOpacity style={styles.button} onPress={() => this._bindPressFunc()}>
             <Text style={styles.buttontext}>Login</Text>
           </TouchableOpacity>
-          <NavBar />
+
         </View>
         <View style={styles.formContainer}>
         </View>

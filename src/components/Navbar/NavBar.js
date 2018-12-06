@@ -33,9 +33,11 @@ export default NavBar
 
 const styles = StyleSheet.create({
   navbarContainer: {
-    marginTop: 20,
+    position: 'absolute',
+    bottom: 30,
     flexDirection: 'row',
-    justifyContent: "space-between"
+    alignItems: 'stretch',
+    justifyContent: "flex-end"
   },
   navitem: {
     marginRight: 15,
