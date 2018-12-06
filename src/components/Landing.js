@@ -1,6 +1,7 @@
 import React from 'react'
 import { Alert, StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native';
 import { Spinner } from 'native-base'
+import { Actions } from 'react-native-router-flux'
 
 import NightGuideLogo from './NightGuideLogo'
 
@@ -17,7 +18,7 @@ class Landing extends React.Component {
   }
   _goPage = () => {
     setTimeout(() => {
-      this.props.navigation.navigate('Home')
+      Actions.home()
     }, 3000)
 
   }

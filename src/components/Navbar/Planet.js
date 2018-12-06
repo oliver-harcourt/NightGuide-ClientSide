@@ -1,6 +1,6 @@
 import React from 'react'
 import { TouchableOpacity, Dimensions, Text } from 'react-native'
-
+import { Actions } from 'react-native-router-flux'
 import { Svg } from 'expo';
 
 const { G, Path, Defs, Circle, Rect } = Svg;
@@ -8,7 +8,7 @@ const { width, height } = Dimensions.get('window');
 
 const Planet = () => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => Actions.planet()}>
             <Svg viewBox="0 0 130.67 130.67" height="60" width="60">
                 <G id="prefix__\uB808\uC774\uC5B4_2" data-name="\uB808\uC774\uC5B4 2">
                     <G id="prefix__Layer_1" data-name="Layer 1">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { TouchableOpacity, StyleSheet, Dimensions, Text } from 'react-native'
-
+import { Actions } from 'react-native-router-flux'
 import { Svg } from 'expo';
 
 const { G, Path, Defs, Circle, Rect } = Svg;
@@ -8,7 +8,7 @@ const { width, height } = Dimensions.get('window');
 
 const Home = () => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => Actions.home()}>
             <Svg viewBox="0 0 130.67 130.67" height="60" width="60">
                 <G >
                     <G>
@@ -67,7 +67,7 @@ const Home = () => {
                     </G>
                 </G>
             </Svg>
-        </TouchableOpacity>
+        </TouchableOpacity >
     )
 }
 

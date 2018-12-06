@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dimensions, TouchableOpacity } from 'react-native'
-
+import { Actions } from 'react-native-router-flux'
 import { Svg } from 'expo';
 
 const { G, Path, Rect } = Svg;
@@ -10,7 +10,7 @@ class Weather extends React.Component {
 
     render() {
         return (
-            <TouchableOpacity >
+            <TouchableOpacity onPress={() => Actions.weather()}>
                 <Svg viewBox="0 0 130.67 130.67" width="60" height="60">
 
                     <G id="prefix__\uB808\uC774\uC5B4_2" data-name="\uB808\uC774\uC5B4 2">
