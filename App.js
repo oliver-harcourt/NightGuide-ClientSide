@@ -21,8 +21,8 @@ export default class App extends React.Component {
       <View>
         {/* <BrooklynMap /> */}
         <ConstellationDetails />
-        {/* <ConstellationList />
-        <Header />
+        <ConstellationList />
+        {/* <Header />
         <InstructionContainer />
         <Landing />
         <MenuInstruction />
