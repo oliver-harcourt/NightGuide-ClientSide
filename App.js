@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 
 import BrooklynMap from "./src/components/BrooklynMap";
 import ConstellationDetails from "./src/components/ConstellationDetails";
@@ -15,13 +15,22 @@ import PlanetList from "./src/components/PlanetList";
 import Weather from "./src/components/Weather";
 import WelcomeInstruction from "./src/components/WelcomeInstruction";
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'stretch',
+    justifyContent: 'center',
+  },
+});
+
 export default class App extends React.Component {
   render() {
     return (
-      <View>
+      <View style={styles.container}>
         {/* <BrooklynMap />
         <ConstellationDetails />
-        <ConstellationList /> */}
+        <ConstellationList />
         <Header />
         <InstructionContainer />
         <Landing />
@@ -31,7 +40,8 @@ export default class App extends React.Component {
         <PlanetDetails />
         <PlanetList />
         <Weather />
-        <WelcomeInstruction />
+        <WelcomeInstruction /> */}
+        <Landing />
       </View>
     );
   }

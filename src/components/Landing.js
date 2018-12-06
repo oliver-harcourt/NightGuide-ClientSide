@@ -2,8 +2,8 @@ import React from 'react'
 import { Alert, StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native';
 import { Spinner } from 'native-base'
 
-import Logo from './Logo'
-import NavBar from './NavBar/NavBar'
+import NightGuideLogo from './NightGuideLogo'
+import NavBar from './Navbar/NavBar'
 
 class Landing extends React.Component {
   state = {
@@ -28,7 +28,7 @@ class Landing extends React.Component {
                         </Text>
             </Spinner>
           )}
-          <Logo />
+          <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
           <TouchableOpacity style={styles.button} onPress={this._onPressButton}>
             <Text style={styles.buttontext}>Login</Text>
