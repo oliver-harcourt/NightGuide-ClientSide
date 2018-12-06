@@ -1,6 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import { createStackNavigator, createNavigationContainer } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import BrooklynMap from "./src/components/BrooklynMap";
 import ConstellationDetails from "./src/components/ConstellationDetails";
@@ -27,13 +27,22 @@ const RootStack = createStackNavigator({
   Home: {
     screen: Home,
     navigationOptions: () => ({
-      header: null
+      title: `Home`
+    }),
+    headerStyle: {
+      backgroundColor: '#f4511e',
+    },
+  },
+  Weather: {
+    screen: Weather,
+    navigationOptions: () => ({
+      title: `Weather`
     })
   }
 
 })
 
-const App = createNavigationContainer(RootStack)
+const App = createAppContainer(RootStack)
 
 
 export default App

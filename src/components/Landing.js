@@ -12,11 +12,14 @@ class Landing extends React.Component {
   _onPressButton = (evt) => {
     setTimeout(() => {
       this.setState({ login: true })
-    }, 3000)
+    }, 1000)
 
   }
   _goPage = () => {
-    this.props.navigation.navigate('Home')
+    setTimeout(() => {
+      this.props.navigation.navigate('Home')
+    }, 3000)
+
   }
 
   _bindPressFunc = async () => {
