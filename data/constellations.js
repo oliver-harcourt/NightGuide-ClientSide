@@ -17,7 +17,8 @@ module.exports = [
             'Alshat'
         ],
         description: 'One of the 12 constellations of the Zodiac. Capricornus has been recognized as a goat since Babylonian and Chaldean times. Usually, it is depicted as a goat with a fish tail, which might relate to a story about the god Pan. Pan, fleeing a monster called Typhon, jumed into the river Nile. The part of him that was below water turned into a fish, while the rest of him above water, stayed as a goat.',
-        image: require('../src/assets/constellations-images/Capricorn.png')
+        image: require('../assets/constellation-images/Capricorn.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
     },
     {
         name: 'Gemini',
@@ -42,7 +43,9 @@ module.exports = [
           '1 Geminorum'
         ],
         description: 'One of the constellations of the Zodiac. Castor and Pollux, the "twins" of Gemini, were Greek heroes. They were among the men Jason led on his voyages on the Argo.',
-        image: require('../src/assets/constellations-images/Gemini.png')
+        image: require('../assets/constellation-images/Gemini.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
+        
       },
       {
         name: 'Leo',
@@ -67,7 +70,8 @@ module.exports = [
           'Subra'
         ],
         description: 'One of the 12 constellations. Leo is the Nemean Lion which was killed by Hercules on one of his great quests. Legend says that the lion had a hide that could not punctured by iron, bronze or stone. Since he couldn\'t reason with the ferocious beast, Hercules strangled it to death and the local people were very grateful. The Chaldeans associated Leo with the sun since it is in the sky during the summer solstice (although this is no longer true, due to the precession of the Earth\'s axis). Since Nile floods around this time, the ancient Egyptians worshipped the celestial lion. You can find Leo in the sky by looking for the "sickle" starting at Regulus (Alpha Leonis) and following the backwards question mark. To find Regulus, use the Big Dipper as described on the Ursa Major Page. In more modern times (late 1600\'s that is!), Johannes Hevelius added the constellation Leo Minor.',
-        image: require('../src/assets/constellations-images/Leo.png')
+        image: require('../assets/constellation-images/Leo.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
       },
       {
         name: 'Libra',
@@ -86,7 +90,8 @@ module.exports = [
           'Brachium'
         ],
         description: 'One of the 12 constellations',
-        image: require('../src/assets/constellations-images/Libra.png')
+        image: require('../assets/constellation-images/Libra.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
       },
       {
         name: 'Pegasus',
@@ -108,7 +113,8 @@ module.exports = [
           'Salm'
         ],
         description: 'Take a look at the story of how Perseus slew Medusa, the mother of Pegasus, and rescued Andromeda, the daughter of Cepheus and Cassiopeia, from the sea monster Cetus. Pegasus was later brought to Mount Helicon by Bellerophon and with one kick of his hoof, he caused the spring of Hippocrene to flow. Hippocrene is said to be the source of inspiration to poets. Bellerophon, who slayed the hideous beast Chimaera, became so headstrong that he ordered Pegasus to fly him up to Mount Olympus, the home of the gods. This impudence angered Zeus, who sent an insect to sting the winged horse, who bucked Bellerophon off its back. Needless to say, Bellerophon did not survive the fall to Earth. Pegasus went on to greatness, however, as the "Thundering Horse of Jove" who carried lightning bolts for Zeus.',
-        image: require('../src/assets/constellations-images/Pegasus.png')
+        image: require('../assets/constellation-images/Pegasus.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
       },
       {
         name: 'Pisces',
@@ -125,7 +131,8 @@ module.exports = [
           'Torcularis Septentrionalis'
         ],
         description: 'One of the 12 constellations of the Zodiac.',
-        image: require('../src/assets/constellations-images/Pisces.png')
+        image: require('../assets/constellation-images/Pisces.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
       },
       {
         name: 'Sagittarius',
@@ -154,6 +161,7 @@ module.exports = [
           'Terebellum 62',
         ],
         description: 'One of the 12 constellations of the Zodiac. The center of our galaxy, the Milky Way, lies in the direction of Sagittarius. It is believed to be about 29,000 light years away from us. The Sun orbits around the Milky Way once every 200 million years at a speed of 220 kilometers per second! What is at the center of the galaxy? No one really knows yet, but it appears that there might be a giant black hole there with a mass about a million times greater that the Sun.',
-        image: require('../src/assets/constellations-images/Sagittarius.png')
+        image: require('../assets/constellation-images/Sagittarius.png'),
+        icon: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg'
       },    
 ]
