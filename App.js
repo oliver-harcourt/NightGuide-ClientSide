@@ -18,7 +18,12 @@ import Weather from "./src/components/Weather";
 import WelcomeInstruction from "./src/components/WelcomeInstruction";
 
 const RootStack = createStackNavigator({
-  Landing: { screen: Landing },
+  Landing: {
+    screen: Landing,
+    navigationOptions: () => ({
+      header: null
+    })
+  },
   Home: { screen: Home }
 
 })

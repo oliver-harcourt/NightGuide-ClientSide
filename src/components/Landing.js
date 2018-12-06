@@ -26,7 +26,7 @@ class Landing extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" />
+        <StatusBar backgroundColor='#6c5ce7' barStyle="light-content" />
         <View style={styles.logoContainer}>
           {this.state.login && (
             <Spinner style={styles.spinner} color="pink" >
