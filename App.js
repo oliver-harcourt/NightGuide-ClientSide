@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-import BoorklynMap from "./src/components/BoorklynMap";
+import BrooklynMap from "./src/components/BrooklynMap";
 import ConstellationDetails from "./src/components/ConstellationDetails";
 import ConstellationList from "./src/components/ConstellationList";
 import Header from "./src/components/Header";
@@ -18,10 +18,10 @@ import WelcomeInstruction from "./src/components/WelcomeInstruction";
 export default class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <BoorklynMap />
+      <View>
+        {/* <BrooklynMap /> */}
         <ConstellationDetails />
-        <ConstellationList />
+        {/* <ConstellationList />
         <Header />
         <InstructionContainer />
         <Landing />
@@ -31,8 +31,8 @@ export default class App extends React.Component {
         <PlanetDetails />
         <PlanetList />
         <Weather />
-        <WelcomeInstruction />
-      </React.Fragment>
+        <WelcomeInstruction /> */}
+      </View>
     );
   }
 }
