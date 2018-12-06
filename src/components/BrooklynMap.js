@@ -1,7 +1,8 @@
 import React from 'react';
 import { MapView } from 'expo'
 
-export default class BooklynMap extends React.Component {
+
+export default class BrooklynMap extends React.Component {
     render() {
         return (
             <MapView
