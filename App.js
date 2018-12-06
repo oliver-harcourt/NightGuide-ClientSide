@@ -24,7 +24,12 @@ const RootStack = createStackNavigator({
       header: null
     })
   },
-  Home: { screen: Home }
+  Home: {
+    screen: Home,
+    navigationOptions: () => ({
+      header: null
+    })
+  }
 
 })
 
