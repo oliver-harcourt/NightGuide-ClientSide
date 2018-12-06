@@ -8,7 +8,7 @@ import Header from "./src/components/Header";
 import InstructionContainer from "./src/components/InstructionContainer";
 import Landing from "./src/components/Landing";
 import MenuInstruction from "./src/components/MenuInstruction";
-import NavBar from "./src/components/NavBar";
+import NavBar from "./src/components/Navbar/NavBar";
 import NightGuideLogo from "./src/components/NightGuideLogo";
 import PlanetDetails from "./src/components/PlanetDetails";
 import PlanetList from "./src/components/PlanetList";
