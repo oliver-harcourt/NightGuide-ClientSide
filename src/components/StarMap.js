@@ -16,13 +16,12 @@ export default class StarMap extends React.Component {
         // const path = 'https://virtualsky.lco.global/embed/?longitude=-119.86286000000001&latitude=34.4326&projection=polar&constellationlabels=true'
 
         return (
-            <View>
+            <View style={styles.container}>
                 <WebView
                     renderError={() => errorMessage}
                     scalesPageToFit={true}
                     source={{ uri: 'https://virtualsky.lco.global/embed/?longitude=-119.86286000000001&latitude=34.4326&projection=polar&constellationlabels=true' }} 
-                    style={{marginTop: 20}}
-                    width="500" 
+                    width="4500" 
                     height="350" 
                     frameborder="0" 
                     scrolling="no" 
@@ -34,3 +33,9 @@ export default class StarMap extends React.Component {
         );
     };
 };
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1, 
+    },
+  });
