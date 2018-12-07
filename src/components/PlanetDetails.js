@@ -1,12 +1,15 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 
 export default class PlanetDetails extends React.Component {
   render() {
     return (
       <View>
-        <Text>PlanetDetails</Text>
-      </View>
-    );
+        <Text>{this.props.planet.name}</Text>
+      </View> 
+  
+    
+      
+    )
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import lookouts from "../../data/lookouts";
-
+import { Actions } from 'react-native-router-flux';
 import { ScrollView } from "react-native";
 
 import { List, ListItem } from "react-native-elements";
@@ -15,8 +15,9 @@ export default class LookoutDetails extends React.Component {
         <List containerStyle={{ marginTop: 550 }}>
           {lookouts.map(lookout => (
             <ListItem
+              onPress={() => Actions.lookoutdetails({ lookout: lookout })}
               roundAvatar
-              avatar={{ uri: lookout.icon }}
+              avatar={lookout.icon}
               key={lookout.id}
               title={lookout.name}
             />

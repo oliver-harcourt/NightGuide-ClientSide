@@ -1,10 +1,8 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-
-// import { MapView } from "react-native-maps";
 import MapView, { Marker } from "react-native-maps";
 
-// import { MapApi } from '../../data/MapApi'
+
 
 export default class BrooklynMap extends React.Component {
   render() {
