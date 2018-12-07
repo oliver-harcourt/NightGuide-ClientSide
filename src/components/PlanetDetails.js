@@ -5,7 +5,7 @@ export default class PlanetDetails extends React.Component {
   render() {
     return (
       <View>
-        <Text>{this.props.text.name}</Text>
+        <Text>{this.props.planet.name}</Text>
       </View> 
   
     

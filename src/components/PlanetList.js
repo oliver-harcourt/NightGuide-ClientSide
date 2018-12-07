@@ -27,7 +27,7 @@ export default class PlanetList extends React.Component {
           {
             planets.map((planet) => (
               <ListItem 
-                onPress={() => Actions.planetdetails({text: planet})}
+                onPress={() => Actions.planetdetails({planet: planet})}
                 roundAvatar
                 avatar={{uri:planet.image}}
                 key={planet.name}

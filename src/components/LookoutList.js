@@ -15,7 +15,7 @@ export default class LookoutDetails extends React.Component {
         <List containerStyle={{ marginTop: 550 }}>
           {lookouts.map(lookout => (
             <ListItem
-              onPress={() => Actions.lookoutdetails({ text: lookout })}
+              onPress={() => Actions.lookoutdetails({ lookout: lookout })}
               roundAvatar
               avatar={lookout.icon}
               key={lookout.id}

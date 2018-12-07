@@ -5,7 +5,7 @@ export default class ConstellationDetails extends React.Component {
   render() {
     return (
       <View>
-        <Text>{this.props.text.name}</Text>
+        <Text>{this.props.constellation.name}</Text>
       </View>
     );
   }

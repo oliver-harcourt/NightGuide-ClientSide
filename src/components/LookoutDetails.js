@@ -5,7 +5,7 @@ export default class LookoutDetails extends React.Component {
   render() {
     return (
       <View>
-        <Text>{this.props.text.name}</Text>
+        <Text>{this.props.lookout.name}</Text>
       </View>
     );
   }

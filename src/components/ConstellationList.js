@@ -21,7 +21,7 @@ export default class ConstellationList extends React.Component {
           {
             constellations.map((constellation) => (
               <ListItem
-                onPress={() => Actions.constellationdetails({text: constellation})}
+                onPress={() => Actions.constellationdetails({constellation: constellation})}
                 roundAvatar
                 avatar={constellation.icon}
                 key={constellation.name}
