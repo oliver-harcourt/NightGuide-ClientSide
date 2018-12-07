@@ -10,40 +10,47 @@ class Landing extends React.Component {
   state = {
     login: false
   }
-  _onPressButton = (evt) => {
-    setTimeout(() => {
-      this.setState({ login: true })
-    }, 1000)
 
-  }
-  _goPage = () => {
+  componentDidMount(){
     setTimeout(() => {
       Actions.home1()
     }, 2000)
-
   }
 
-  _bindPressFunc = async () => {
-    this._onPressButton();
-    await this._goPage()
-  }
+  // _onPressButton = (evt) => {
+  //   setTimeout(() => {
+  //     this.setState({ login: true })
+  //   }, 1000)
+
+  // }
+  // _goPage = () => {
+  //   setTimeout(() => {
+  //     Actions.home1()
+  //   }, 2000)
+
+  // }
+
+  // _bindPressFunc = async () => {
+  //   this._onPressButton();
+  //   await this._goPage()
+  // }
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor='#6c5ce7' barStyle="light-content" />
+        {/* <StatusBar backgroundColor='#6c5ce7' barStyle="light-content" /> */}
         <View style={styles.logoContainer}>
-          {this.state.login && (
+          {/* {this.state.login && (
             <Spinner style={styles.spinner} color="pink" >
               <Text>
                 Loading
                         </Text>
             </Spinner>
-          )}
+          )} */}
           <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
-          <TouchableOpacity style={styles.button} onPress={() => this._bindPressFunc()}>
+          {/* <TouchableOpacity style={styles.button} onPress={() => this._bindPressFunc()}>
             <Text style={styles.buttontext}>Login</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
         </View>
         <View style={styles.formContainer}>
@@ -104,3 +111,4 @@ const styles = StyleSheet.create({
 });
 
 export default Landing
+
