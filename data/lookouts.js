@@ -2,8 +2,7 @@ module.exports = [
   {
     id: 1,
     name: "Wellington Wind Turbine",
-    icon:
-      require('../assets/constellation-images/lookout/windturbin.png'),
+    icon: require("../assets/constellation-images/lookout/windturbin.png"),
     latitude: -41.310868,
     longitude: 174.744861,
     image:
@@ -14,8 +13,7 @@ module.exports = [
   {
     id: 2,
     name: "Mount Victoria Lookout",
-    icon:
-      require('../assets/constellation-images/lookout/mtviclookout.png'),
+    icon: require("../assets/constellation-images/lookout/mtviclookout.png"),
     latitude: -41.295932,
     longitude: 174.794568,
     image:
@@ -26,8 +24,7 @@ module.exports = [
   {
     id: 3,
     name: "Te Ahumairangi Hill Lookout",
-    icon:
-      require('../assets/constellation-images/lookout/teahumairangihilllookout.png'),
+    icon: require("../assets/constellation-images/lookout/teahumairangihilllookout.png"),
     latitude: -41.274925,
     longitude: 174.765356,
     image:
@@ -38,8 +35,7 @@ module.exports = [
   {
     id: 4,
     name: "Red Rocks",
-    icon:
-      require('../assets/constellation-images/lookout/redrocks.png'),
+    icon: require("../assets/constellation-images/lookout/redrocks.png"),
     latitude: -41.357376,
     longitude: 174.726562,
     image: "https://c1.staticflickr.com/6/5058/5560574252_6be78c3c26_b.jpg",
