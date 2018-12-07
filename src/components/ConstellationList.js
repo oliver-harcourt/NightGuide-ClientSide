@@ -15,15 +15,14 @@ export default class ConstellationList extends React.Component {
   render() {
     return (
       <View>
-        <List containerStyle={{marginBottom: 20}}>
+        <List containerStyle={{ marginBottom: 20 }}>
           {
             constellations.map((constellation) => (
               <ListItem
                 roundAvatar
-                avatar={{uri:constellation.icon}}
+                avatar={constellation.icon}
                 key={constellation.name}
                 title={constellation.name}
-                // leftIcon={{ name: constellation.image }}
               />
             ))
           }

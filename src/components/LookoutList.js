@@ -13,7 +13,7 @@ export default class LookoutDetails extends React.Component {
           {lookouts.map(lookout => (
             <ListItem
               roundAvatar
-              avatar={{ uri: lookout.icon }}
+              avatar={lookout.icon}
               key={lookout.id}
               title={lookout.name}
             />
