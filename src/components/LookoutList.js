@@ -1,15 +1,18 @@
 import React from "react";
 import lookouts from "../../data/lookouts";
 
-import { View, ScrollView } from "react-native";
+import { ScrollView } from "react-native";
 
 import { List, ListItem } from "react-native-elements";
+
+import BrooklynMap from "./BrooklynMap";
 
 export default class LookoutDetails extends React.Component {
   render() {
     return (
       <ScrollView>
-        <List containerStyle={{ marginBottom: 20 }}>
+        <BrooklynMap />
+        <List containerStyle={{ marginTop: 550 }}>
           {lookouts.map(lookout => (
             <ListItem
               roundAvatar
