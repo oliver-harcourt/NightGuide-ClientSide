@@ -8,6 +8,7 @@ import LookoutList from './src/components/LookoutList'
 import ConstellationList from './src/components/ConstellationList'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
+import PlanetDetails from './src/components/PlanetDetails'
 
 export default class App extends React.Component {
   render() {
@@ -40,6 +41,11 @@ export default class App extends React.Component {
             key="planet"
             component={PlanetList}
             title="Planet"
+          />
+          <Scene
+            key="planetdetails"
+            component={PlanetDetails}
+            title="PlanetDetails"
           />
           <Scene
             key="weather"
