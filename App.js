@@ -11,6 +11,7 @@ import ConstellationDetails from './src/components/ConstellationDetails'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
+import StarMap from './src/components/StarMap'
 
 
 export default class App extends React.Component {
@@ -68,6 +69,11 @@ export default class App extends React.Component {
             key="weather"
             component={Weather}
             title="Weather"
+          />
+          <Scene
+            key="starmap"
+            component={StarMap}
+            title="StarMap"
           />
 
         </Scene>
