@@ -1,14 +1,14 @@
 import React from "react";
 import lookouts from "../../data/lookouts";
 
-import { View, Text } from "react-native";
+import { View, ScrollView } from "react-native";
 
 import { List, ListItem } from "react-native-elements";
 
 export default class LookoutDetails extends React.Component {
   render() {
     return (
-      <View>
+      <ScrollView>
         <List containerStyle={{ marginBottom: 20 }}>
           {lookouts.map(lookout => (
             <ListItem
@@ -19,7 +19,7 @@ export default class LookoutDetails extends React.Component {
             />
           ))}
         </List>
-      </View>
+      </ScrollView>
     );
   }
 }
