@@ -22,7 +22,6 @@ export default class PlanetList extends React.Component {
 
     return (
       <View>
-        {/* <PlanetDetails /> */}
 
         <List containerStyle={{ marginBottom: 20 }}>
           {
@@ -33,7 +32,6 @@ export default class PlanetList extends React.Component {
                 avatar={planet.icon}
                 key={planet.name}
                 title={planet.name}
-              // leftIcon={{ name: planet.image }}
               />
             ))
           }
