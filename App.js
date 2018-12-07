@@ -18,11 +18,15 @@ export default class App extends React.Component {
             key="login"
             component={Login}
             initial
-            // navigationBarStyle={{ backgroundColor: "#6c5ce7" }}
             hideNavBar={true}
           />
           <Scene
-            key="home"
+            key="home1"
+            component={Home}
+            title="Home"
+          />
+          <Scene
+            key="home2"
             component={Home}
             title="Home"
           />
