@@ -6,8 +6,10 @@ import Login from './src/components/Landing'
 import Home from './src/components/Home'
 import LookoutList from './src/components/LookoutList'
 import ConstellationList from './src/components/ConstellationList'
+import ConstellationDetails from './src/components/ConstellationDetails'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
+import PlanetDetails from './src/components/PlanetDetails'
 
 export default class App extends React.Component {
   render() {
@@ -34,12 +36,22 @@ export default class App extends React.Component {
           <Scene
             key="stars"
             component={ConstellationList}
-            title="Constallation"
+            title="Constellation"
+          />
+          <Scene
+            key="constellationdetails"
+            component={ConstellationDetails}
+            title="ConstellationDetails"
           />
           <Scene
             key="planet"
             component={PlanetList}
             title="Planet"
+          />
+          <Scene
+            key="planetdetails"
+            component={PlanetDetails}
+            title="PlanetDetails"
           />
           <Scene
             key="weather"
