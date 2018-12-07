@@ -1,17 +1,19 @@
 import React from "react";
 import lookouts from "../../data/lookouts";
 import { Actions } from 'react-native-router-flux';
-import { ScrollView } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 import { List, ListItem } from "react-native-elements";
-
+import NavBar from './Navbar/NavBar'
 import BrooklynMap from "./BrooklynMap";
 
 export default class LookoutDetails extends React.Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView >
+
         <BrooklynMap />
+
         <List containerStyle={{ marginTop: 550 }}>
           {lookouts.map(lookout => (
             <ListItem
@@ -23,7 +25,17 @@ export default class LookoutDetails extends React.Component {
             />
           ))}
         </List>
+        <View style={styles.container}>
+          <NavBar />
+        </View>
       </ScrollView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
