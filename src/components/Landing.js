@@ -18,8 +18,8 @@ class Landing extends React.Component {
   }
   _goPage = () => {
     setTimeout(() => {
-      Actions.home()
-    }, 3000)
+      Actions.home1()
+    }, 2000)
 
   }
 

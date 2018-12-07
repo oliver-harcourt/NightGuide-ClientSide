@@ -8,7 +8,7 @@ const { width, height } = Dimensions.get('window');
 
 const Home = () => {
     return (
-        <TouchableOpacity onPress={() => Actions.home()}>
+        <TouchableOpacity onPress={() => Actions.home2()}>
             <Svg viewBox="0 0 130.67 130.67" height="60" width="60">
                 <G >
                     <G>
