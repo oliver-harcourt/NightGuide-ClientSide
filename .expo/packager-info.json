@@ -3,7 +3,7 @@
   "expoServerPort": null,
   "packagerPort": null,
   "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "expoServerNgrokUrl": "https://j3-cmb.anonymous.nightguide-clientside.exp.direct",
+  "packagerNgrokUrl": "https://packager.j3-cmb.anonymous.nightguide-clientside.exp.direct",
+  "ngrokPid": 82197
 }

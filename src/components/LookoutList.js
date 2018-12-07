@@ -10,7 +10,7 @@ import BrooklynMap from "./BrooklynMap";
 export default class LookoutDetails extends React.Component {
   render() {
     return (
-      <ScrollView>
+      <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>
         <BrooklynMap />
         <List containerStyle={{ marginTop: 550 }}>
           {lookouts.map(lookout => (
