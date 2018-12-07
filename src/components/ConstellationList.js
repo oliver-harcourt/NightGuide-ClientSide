@@ -1,5 +1,7 @@
 import React from "react";
 import constellations from '../../data/constellations'
+import { Actions } from 'react-native-router-flux';
+
 
 import {
   View,
@@ -19,6 +21,7 @@ export default class ConstellationList extends React.Component {
           {
             constellations.map((constellation) => (
               <ListItem
+                onPress={() => Actions.constellationdetails({text: constellation})}
                 roundAvatar
                 avatar={{uri:constellation.icon}}
                 key={constellation.name}
