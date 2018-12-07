@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19005,
+  "packagerPid": 54690,
   "expoServerNgrokUrl": "https://zm-4yr.anonymous.nightguide-clientside.exp.direct",
   "packagerNgrokUrl": "https://packager.zm-4yr.anonymous.nightguide-clientside.exp.direct",
-  "ngrokPid": 83209
+  "ngrokPid": 54718
 }

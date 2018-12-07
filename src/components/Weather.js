@@ -1,8 +1,7 @@
 import React from "react";
-// import NavBar from "./src/components/NavBar";
 import { StyleSheet, Text, View, ActivityIndicator, ImageBackground } from 'react-native'
 
-// const bg = require('../../assets/bgeffect.gif')
+
 
 export default class App extends React.Component {
   constructor(props) {

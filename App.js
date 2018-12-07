@@ -17,7 +17,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Router>
-        <Scene key="root" >
+        <Scene key="root">
           <Scene
             key="login"
             component={Login}
@@ -76,11 +76,3 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'stretch',
-    justifyContent: 'center',
-  },
-});
