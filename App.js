@@ -11,7 +11,7 @@ import ConstellationDetails from './src/components/ConstellationDetails'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
-import LookoutDetails from './src/components/LookoutList';
+
 
 export default class App extends React.Component {
   render() {
