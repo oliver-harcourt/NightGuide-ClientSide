@@ -5,7 +5,7 @@ export default class LookoutDetails extends React.Component {
   render() {
     let screenWidth = Dimensions.get("window").width;
     return (
-      <ScrollView>
+      <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}>
         <Text
           style={{
             marginTop: 20,
@@ -17,14 +17,6 @@ export default class LookoutDetails extends React.Component {
         >
           {this.props.lookout.name}
         </Text>
-        <Text
-          style={{
-            fontSize: 20,
-            padding: 30
-          }}
-        >
-          {this.props.lookout.description}
-        </Text>
         <Image
           source={{ uri: this.props.lookout.image }}
           style={{
@@ -33,6 +25,15 @@ export default class LookoutDetails extends React.Component {
             marginTop: 70
           }}
         />
+        <Text
+          style={{
+            fontSize: 20,
+            padding: 30,
+            textAlign: "justify"
+          }}
+        >
+          {this.props.lookout.description}
+        </Text>
       </ScrollView>
     );
   }
