@@ -6,7 +6,7 @@ module.exports = [
     latitude: -41.310868,
     longitude: 174.744861,
     image:
-      "https://www.wellingtonnz.com/assets/Uploads/images/d6e7d69638/wellington-wind-turbine.jpg",
+      "http://www.wheresschultz.com/uploads/9/2/8/0/92806014/dsc04837_orig.jpg",
     description:
       "The original Brooklyn wind turbine, on the hills above Wellington, was the oldest operating wind turbine in New Zealand. It began generating in 1993 and operated reliably for 17 years before any major repairs were required. In 2010 the wind turbine was out of commission for several months while Meridian Energy, the wind turbine's operator, waited for the delivery of parts to repair it."
   },
