@@ -42,10 +42,10 @@ export default class App extends React.Component {
           source={require('../../assets/bgeffect.gif')}
           style={StyleSheet.absoluteFill}>
           <View style={styles.container}>
-            <Text> Temprature: {data.main.temp}</Text>
-            <Text> City: {data.name}</Text>
-            <Text> Country: {data.sys.country}</Text>
-            <Text> Description: {data.weather[0].description}</Text>
+            <Text style={styles.title}> {data.name}</Text>
+            <Text style={styles.subtitle}>{data.sys.country}</Text>
+            <Text style={styles.tempstyle}>{`${data.main.temp}°`}</Text>
+            <Text style={styles.descrip}>{data.weather[0].description}</Text>
           </View>
         </ImageBackground>
       );
@@ -60,5 +60,37 @@ const styles = StyleSheet.create({
   },
   bgStyle: {
     resizeMode: 'stretch',
+  },
+  title: {
+    fontSize: 50,
+    position: 'absolute',
+    top: 50,
+    left: 10,
+    fontWeight: 'bold',
+    color: 'white'
+  },
+  subtitle: {
+    fontSize: 20,
+    position: 'absolute',
+    top: 110,
+    left: 235,
+    color: 'white',
+    fontWeight: '700'
+  },
+  tempstyle: {
+    fontSize: 80,
+    color: 'white',
+    position: 'absolute',
+    top: 300,
+    left: 20,
+    fontWeight: '700'
+  },
+  descrip: {
+    fontSize: 20,
+    color: 'white',
+    fontWeight: '700',
+    position: 'absolute',
+    top: 350,
+    left: 150,
   }
 });
