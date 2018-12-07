@@ -11,6 +11,9 @@ import ConstellationDetails from './src/components/ConstellationDetails'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
+import WelcomeInstruction from './src/components/WelcomeInstruction'
+// import MenuInstruction from './src/components/MenuInstruction'
+// import InstructionContainer from './src/components/InstructionContainer'
 
 
 export default class App extends React.Component {
@@ -26,14 +29,20 @@ export default class App extends React.Component {
           />
           <Scene
             key="home1"
-            component={Home}
-            title="Home"
+            component={WelcomeInstruction}
+            title="Welcome"
           />
           <Scene
             key="home2"
             component={Home}
             title="Home"
           />
+          <Scene
+          key="instruction"
+          component={WelcomeInstruction} 
+          title="Instruction"
+        />
+
           <Scene
             key="lookout"
             component={LookoutList}
