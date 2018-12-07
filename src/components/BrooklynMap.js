@@ -38,6 +38,6 @@ export default class BrooklynMap extends React.Component {
 }
 const styles = StyleSheet.create({
   map: {
-    ...StyleSheet.absoluteFillObject
+    ...StyleSheet.absoluteFillObject,
   }
 });

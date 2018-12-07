@@ -12,7 +12,7 @@ export default class LookoutDetails extends React.Component {
     return (
       <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>
         <BrooklynMap />
-        <List containerStyle={{ marginTop: 550 }}>
+        <List containerStyle={{ marginTop: 350 }}>
           {lookouts.map(lookout => (
             <ListItem
               onPress={() => Actions.lookoutdetails({ lookout: lookout })}
@@ -35,5 +35,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
+    top: 235
   },
 });

@@ -49,7 +49,7 @@ class Landing extends React.Component {
         <View style={styles.formContainer}>
         </View>
         <View>
-          <Text style={styles.subtitle}>Build by DEV</Text>
+          <Text style={styles.subtitle}>Build by Dungeon</Text>
         </View>
       </View>
     )

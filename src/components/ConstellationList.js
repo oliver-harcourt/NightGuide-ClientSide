@@ -5,9 +5,9 @@ import { Actions } from 'react-native-router-flux';
 
 import {
   View,
-  Text
+  StyleSheet
 } from 'react-native'
-
+import NavBar from './Navbar/NavBar'
 import {
   List,
   ListItem
@@ -21,7 +21,7 @@ export default class ConstellationList extends React.Component {
           {
             constellations.map((constellation) => (
               <ListItem
-                onPress={() => Actions.constellationdetails({constellation: constellation})}
+                onPress={() => Actions.constellationdetails({ constellation: constellation })}
                 roundAvatar
                 avatar={constellation.icon}
                 key={constellation.name}
@@ -30,7 +30,18 @@ export default class ConstellationList extends React.Component {
             ))
           }
         </List>
+        <View style={styles.container}>
+          <NavBar />
+        </View>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 370
+  },
+});

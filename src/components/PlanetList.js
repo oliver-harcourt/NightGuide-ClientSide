@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 
 import {
   View,
-  Text
+  StyleSheet
 } from 'react-native'
 
 import {
@@ -12,6 +12,7 @@ import {
   ListItem
 } from 'react-native-elements'
 import PlanetDetails from "./PlanetDetails";
+import NavBar from './Navbar/NavBar'
 
 export default class PlanetList extends React.Component {
 
@@ -37,11 +38,21 @@ export default class PlanetList extends React.Component {
             ))
           }
         </List>
-
+        <View style={styles.container}>
+          <NavBar />
+        </View>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 320
+  },
+});
 
 // component
 
