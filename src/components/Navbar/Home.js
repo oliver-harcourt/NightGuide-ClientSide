@@ -9,7 +9,7 @@ const { width, height } = Dimensions.get('window');
 class Home extends React.Component {
     render() {
         return (
-            <TouchableOpacity onPress={() => Actions.home2()}>
+            <TouchableOpacity onPress={() => Actions.home()}>
                 <Svg viewBox="0 0 130.67 130.67" height="60" width="60">
                     <G >
                         <G>
