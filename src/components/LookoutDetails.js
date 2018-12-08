@@ -5,7 +5,8 @@ export default class LookoutDetails extends React.Component {
   render() {
     let screenWidth = Dimensions.get("window").width;
     return (
-      <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}>
+      <ScrollView>
+        {/* <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}> */}
         <Text
           style={{
             marginTop: 20,

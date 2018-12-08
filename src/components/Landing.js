@@ -10,19 +10,18 @@ class Landing extends React.Component {
   state = {
     login: false
   }
-
-  componentDidMount() {
+  componentDidMount(){
     setTimeout(() => {
       Actions.home()
     }, 2000)
   }
-
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor='#6c5ce7' barStyle="light-content" />
         <View style={styles.logoContainer}>
           <NightGuideLogo />
+          <Text style={styles.title}>Night Guide</Text>
+      <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
         </View>
         <View style={styles.formContainer}>
@@ -83,3 +82,4 @@ const styles = StyleSheet.create({
 });
 
 export default Landing
+
