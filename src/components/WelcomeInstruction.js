@@ -1,9 +1,7 @@
 import React from 'react'
-import {
-  Text,
-  View
-} from 'react-native'
+import {Text,View, Button} from 'react-native'
 import Swiper from 'react-native-swiper'
+import { Actions } from 'react-native-router-flux'
 
 var styles = {
   wrapper: {
@@ -12,37 +10,37 @@ var styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#9DD6EB'
+    backgroundColor: '#6c5ce7'
   },
   slide2: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#97CAE5'
+    backgroundColor: '#6c5ce7'
   },
   slide3: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9'
+    backgroundColor: '#6c5ce7'
   },
   slide4: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9'
+    backgroundColor: '#6c5ce7'
   },
   slide5: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9'
+    backgroundColor: '#6c5ce7'
   },
   slide6: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#92BBD9'
+    backgroundColor: '#6c5ce7'
   },
   text: {
     color: '#fff',
@@ -51,7 +49,7 @@ var styles = {
   }
 }
 
-export default () => <Swiper style={styles.wrapper} showsButtons>
+export default () => <Swiper style={styles.wrapper} showsButtons >
   <View style={styles.slide1}>
     <Text style={styles.text}>Welcome to Nightguide!
 NIghtguide is a multifaceted astronomical application built for curious users who are interested in our wonderful universe!
@@ -85,7 +83,8 @@ The planet finder will show you a list of planets in our solar system, and you c
       Find a lookout!
   If you place isn’t the best place to view stars or planets, we have linked a few local (local to Wellington) on a map to its convenient!
 </Text>
-  </View>
+<Button onPress={() => Actions.home2()} title="Go Home" ></Button>
+</View>
 </Swiper>
 
 

@@ -12,9 +12,6 @@ import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
-// import MenuInstruction from './src/components/MenuInstruction'
-// import InstructionContainer from './src/components/InstructionContainer'
-
 
 export default class App extends React.Component {
   render() {
