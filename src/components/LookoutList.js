@@ -1,10 +1,9 @@
 import React from "react";
 import lookouts from "../../data/lookouts";
-import { Actions } from "react-native-router-flux";
-import { ScrollView } from "react-native";
-
+import { Actions } from 'react-native-router-flux';
+import { ScrollView, StyleSheet, View } from "react-native";
 import { List, ListItem } from "react-native-elements";
-
+import NavBar from './Navbar/NavBar'
 import BrooklynMap from "./BrooklynMap";
 
 export default class LookoutDetails extends React.Component {
@@ -12,7 +11,7 @@ export default class LookoutDetails extends React.Component {
     return (
       <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>
         <BrooklynMap />
-        <List containerStyle={{ marginTop: 550 }}>
+        <List containerStyle={{ marginTop: 350 }}>
           {lookouts.map(lookout => (
             <ListItem
               onPress={() => Actions.lookoutdetails({ lookout: lookout })} //first lookout is the lookout in {this.props.lookout.name}lookoutdetail
@@ -23,7 +22,18 @@ export default class LookoutDetails extends React.Component {
             />
           ))}
         </List>
+        <View style={styles.container}>
+          <NavBar />
+        </View>
       </ScrollView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 235
+  },
+});

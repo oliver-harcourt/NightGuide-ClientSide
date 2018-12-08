@@ -4,7 +4,7 @@ import { Actions } from 'react-native-router-flux';
 
 import {
   View,
-  Text
+  StyleSheet
 } from 'react-native'
 
 import {
@@ -12,36 +12,45 @@ import {
   ListItem
 } from 'react-native-elements'
 import PlanetDetails from "./PlanetDetails";
+import NavBar from './Navbar/NavBar'
 
 export default class PlanetList extends React.Component {
 
 
   render() {
-  
-  
+
+
     return (
       <View>
-        {/* <PlanetDetails /> */}
 
-        <List containerStyle={{marginBottom: 20}}>
+        <List containerStyle={{ marginBottom: 20 }}>
           {
             planets.map((planet) => (
-              <ListItem 
-                onPress={() => Actions.planetdetails({planet: planet})}
+              <ListItem
+                onPress={() => Actions.planetdetails({ planet: planet })}
                 roundAvatar
-                avatar={{uri:planet.image}}
+                avatar={planet.icon}
                 key={planet.name}
                 title={planet.name}
-                // leftIcon={{ name: planet.image }}
               />
             ))
           }
         </List>
-
+        <View style={styles.container}>
+          <NavBar />
+        </View>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: 320
+  },
+});
 
 // component
 
