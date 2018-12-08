@@ -25,7 +25,7 @@ export default class App extends React.Component {
             hideNavBar={true}
           />
           <Scene
-            key="home1"
+            key="instruction"
             component={WelcomeInstruction}
             title="Welcome"
           />
