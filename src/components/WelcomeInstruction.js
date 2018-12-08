@@ -83,7 +83,7 @@ The planet finder will show you a list of planets in our solar system, and you c
       Find a lookout!
   If you place isn’t the best place to view stars or planets, we have linked a few local (local to Wellington) on a map to its convenient!
 </Text>
-<Button onPress={() => Actions.home2()} title="Go Home" ></Button>
+<Button onPress={() => Actions.home()} title="Go Home" ></Button>
 </View>
 </Swiper>
 
