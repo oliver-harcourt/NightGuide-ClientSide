@@ -12,7 +12,7 @@ import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
 import StarMap from './src/components/StarMap'
-
+import WelcomeInstruction from './src/components/WelcomeInstruction'
 
 export default class App extends React.Component {
   render() {
@@ -26,15 +26,21 @@ export default class App extends React.Component {
             hideNavBar={true}
           />
           <Scene
-            key="home1"
+            key="instruction"
+            component={WelcomeInstruction}
+            title="Welcome"
+          />
+          <Scene
+            key="home"
             component={Home}
             title="Home"
           />
           <Scene
-            key="home2"
-            component={Home}
-            title="Home"
-          />
+          key="instruction"
+          component={WelcomeInstruction} 
+          title="Instruction"
+        />
+
           <Scene
             key="lookout"
             component={LookoutList}
@@ -82,11 +88,3 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'stretch',
-    justifyContent: 'center',
-  },
-});

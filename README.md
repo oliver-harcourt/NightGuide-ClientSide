@@ -37,21 +37,12 @@ The idea of the app is to create a **"stargazing - astronomical"** style app for
 
 + As a user I want to be able to .. Observe which planets and constellations I can see from Wellington on a specific night
 
-+ As a user I want to be able to .. Use augmented reality with the constellations and actually see them in the sky based on where they actually are!(a technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view.)
++ As a user I want to be able to .. Use augmented reality with the constellations to see image of them through camera
 
-+ As a user I want to be able to .. See some interesting photos from NASA
++ As a user I want to be able to .. Depending on time of day for user, show light or dark background
 
-+ As a user I want to be able to .. Add my timezone to my profile
++ As a user I want to be able to .. Depending on time of day and weather for user, show different background in weather view
 
-+ As a user I want to be able to .. See Satellites   
-
-+ As a user I want to be able to .. Search for things (specific planets or constellations ect..) 
- 
-+ As a user I want to be able to .. Post about meetups and find local meetups in my area.
-
-+ As a user I want to be able to .. To log in and have a profile
-
-+ As a user I want to be able to .. Turn lights on and lights off as a feature
  ----
 
  ## Views (Client Side)
