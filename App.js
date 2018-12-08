@@ -14,6 +14,7 @@ import PlanetDetails from './src/components/PlanetDetails'
 import StarMap from './src/components/StarMap'
 
 
+
 export default class App extends React.Component {
   render() {
     return (
@@ -75,7 +76,8 @@ export default class App extends React.Component {
             component={StarMap}
             title="StarMap"
           />
-
+         
+          
         </Scene>
       </Router>
     );
