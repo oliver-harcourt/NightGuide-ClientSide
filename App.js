@@ -30,7 +30,7 @@ export default class App extends React.Component {
             title="Welcome"
           />
           <Scene
-            key="home2"
+            key="home"
             component={Home}
             title="Home"
           />
@@ -82,11 +82,3 @@ export default class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'stretch',
-    justifyContent: 'center',
-  },
-});

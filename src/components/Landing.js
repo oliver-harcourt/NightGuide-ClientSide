@@ -10,46 +10,24 @@ class Landing extends React.Component {
   state = {
     login: false
   }
-  _onPressButton = (evt) => {
+  componentDidMount(){
     setTimeout(() => {
-      this.setState({ login: true })
-    }, 1000)
-
-  }
-  _goPage = () => {
-    setTimeout(() => {
-      Actions.home1()
+      Actions.home()
     }, 2000)
-
-  }
-
-  _bindPressFunc = async () => {
-    this._onPressButton();
-    await this._goPage()
   }
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor='#6c5ce7' barStyle="light-content" />
         <View style={styles.logoContainer}>
-          {this.state.login && (
-            <Spinner style={styles.spinner} color="pink" >
-              <Text>
-                Loading
-                        </Text>
-            </Spinner>
-          )}
           <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
-          <TouchableOpacity style={styles.button} onPress={() => this._bindPressFunc()}>
-            <Text style={styles.buttontext}>Login</Text>
-          </TouchableOpacity>
-
+      <NightGuideLogo />
+          <Text style={styles.title}>Night Guide</Text>
         </View>
         <View style={styles.formContainer}>
         </View>
         <View>
-          <Text style={styles.subtitle}>Build by DEV</Text>
+          <Text style={styles.subtitle}>Build by Dungeon</Text>
         </View>
       </View>
     )
@@ -104,3 +82,4 @@ const styles = StyleSheet.create({
 });
 
 export default Landing
+
