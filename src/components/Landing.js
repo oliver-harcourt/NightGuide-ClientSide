@@ -12,7 +12,7 @@ class Landing extends React.Component {
   }
   componentDidMount(){
     setTimeout(() => {
-      Actions.home()
+      Actions.home1()
     }, 2000)
   }
   render() {

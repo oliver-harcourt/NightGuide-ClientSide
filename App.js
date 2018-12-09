@@ -34,11 +34,11 @@ export default class App extends React.Component {
             component={Home}
             title="Home"
           />
-          <Scene
+          {/* <Scene
           key="instruction"
           component={WelcomeInstruction} 
           title="Instruction"
-        />
+        /> */}
 
           <Scene
             key="lookout"
