@@ -11,6 +11,7 @@ import ConstellationDetails from './src/components/ConstellationDetails'
 import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
+import StarMap from './src/components/StarMap'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
 
 export default class App extends React.Component {
@@ -25,7 +26,7 @@ export default class App extends React.Component {
             hideNavBar={true}
           />
           <Scene
-            key="home1"
+            key="instruction"
             component={WelcomeInstruction}
             title="Welcome"
           />
@@ -35,14 +36,15 @@ export default class App extends React.Component {
             title="Home"
           />
           <Scene
-          key="instruction"
-          component={WelcomeInstruction} 
-          title="Instruction"
-        />
+            key="instruction"
+            component={WelcomeInstruction}
+            title="Instruction"
+          />
 
           <Scene
             key="lookout"
             component={LookoutList}
+
             title="Lookout"
           />
           <Scene
@@ -68,12 +70,18 @@ export default class App extends React.Component {
           <Scene
             key="planetdetails"
             component={PlanetDetails}
+
             title="PlanetDetails"
           />
           <Scene
             key="weather"
             component={Weather}
             title="Weather"
+          />
+          <Scene
+            key="starmap"
+            component={StarMap}
+            title="StarMap"
           />
 
         </Scene>
