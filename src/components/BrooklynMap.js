@@ -20,7 +20,7 @@ export default class BrooklynMap extends React.Component {
   componentDidMount() {
     let geoOptions = {
       enableHigthAccuracy: true, //able to connect location on phone
-      timeOut: 20000, //20sec
+      timeout: 20000, //20sec
       maximumAge: 60 * 60 * 24 // sec min hr
     }
     this.setState({
