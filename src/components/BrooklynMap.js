@@ -23,7 +23,6 @@ export default class BrooklynMap extends React.Component {
       timeOut: 20000, //20sec
       maximumAge: 60 * 60 * 24 // sec min hr
     }
-
     navigator.geolocation.getCurrentPosition(this.geoSuccess, this.geoFailure, geoOptions)
     this.setState({
       ready: false,
