@@ -13,8 +13,7 @@ export default class BrooklynMap extends React.Component {
         lat: null,
         lng: null
       },
-      error: null,
-      gotFonts: false
+      error: null
     }
   }
 
@@ -28,13 +27,11 @@ export default class BrooklynMap extends React.Component {
     navigator.geolocation.getCurrentPosition(this.geoSuccess, this.geoFailure, geoOptions)
     this.setState({
       ready: false,
-      error: null,
-      gotFonts: true
+      error: null
     })
   }
 
   geoSuccess = (position) => {
-
     this.setState({
       ready: true,
       where: {
