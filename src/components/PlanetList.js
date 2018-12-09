@@ -23,7 +23,7 @@ export default class PlanetList extends React.Component {
     return (
       <View>
 
-        <List containerStyle={{ marginBottom: 20 }}>
+        <List containerStyle={{ marginBottom: 0 }}>
           {
             planets.map((planet) => (
               <ListItem
