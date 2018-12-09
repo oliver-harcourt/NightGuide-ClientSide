@@ -1,9 +1,9 @@
 {
-  "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": 19004,
-  "packagerPid": 14181,
   "expoServerNgrokUrl": "https://xb-jsk.anonymous.nightguide-clientside.exp.direct",
   "packagerNgrokUrl": "https://packager.xb-jsk.anonymous.nightguide-clientside.exp.direct",
-  "ngrokPid": 14192
+  "ngrokPid": 16156,
+  "devToolsPort": 19002,
+  "packagerPort": 19005,
+  "packagerPid": 16144
 }
