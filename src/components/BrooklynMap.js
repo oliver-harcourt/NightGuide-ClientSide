@@ -20,8 +20,9 @@ export default class BrooklynMap extends React.Component {
   componentDidMount() {
     let geoOptions = {
       enableHigthAccuracy: true, //able to connect location on phone
-      timeout: 20000, //20sec
-      maximumAge: 60 * 60 * 24 // sec min hr
+      // timeout: 20000, //20sec
+      // maximumAge: 60 * 60 * 24 // sec min hr
+      maximumAge: 0 // sec min hr
     }
     this.setState({
       ready: false,
@@ -31,6 +32,7 @@ export default class BrooklynMap extends React.Component {
   }
 
   geoSuccess = (position) => {
+    console.log(position)
     this.setState({
       ready: true,
       where: {
@@ -53,6 +55,7 @@ export default class BrooklynMap extends React.Component {
     return (
       <MapView
         style={styles.map}
+        showsUserLocation={true}
         initialRegion={{
           latitude: -41.310868,
           longitude: 174.744861,
