@@ -10,7 +10,7 @@ export default class Home extends React.Component {
       <View style={styles.container}>
         <StarMap />
         <View style={styles.container}>
-          <NavBar style={styles.navBar}/>
+          <NavBar style={styles.navBar} />
         </View>
       </View>
     );
