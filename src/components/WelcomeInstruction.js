@@ -22,7 +22,8 @@ var styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#6c5ce7'
+    backgroundColor: '#6c5ce7',
+    justifyContent: 'space-between'
   },
   slide3: {
     flex: 1,
@@ -59,7 +60,7 @@ export default () => <Swiper style={styles.wrapper} showsButtons >
     </View>
   </ImageBackground>
 
-  <View style={styles.slide2}>
+  <View style={styles.slide2} >
     <Stars />
     <Planet />
     <Lookout />
