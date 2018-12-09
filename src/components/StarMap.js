@@ -2,9 +2,7 @@ import React from 'react';
 import {
     StyleSheet,
     WebView,
-    View,
-    Text,
-    Image
+    View
 } from 'react-native';
 
 export default class StarMap extends React.Component {
@@ -13,7 +11,6 @@ export default class StarMap extends React.Component {
     }
 
     render() {
-        // const path = 'https://virtualsky.lco.global/embed/?longitude=-119.86286000000001&latitude=34.4326&projection=polar&constellationlabels=true'
 
         return (
             <View style={styles.container}>
