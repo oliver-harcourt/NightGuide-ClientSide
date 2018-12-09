@@ -43,7 +43,6 @@ export default class App extends React.Component {
 
           <Scene
             key="lookout"
-            
             component={LookoutList}
 
             title="Lookout"
