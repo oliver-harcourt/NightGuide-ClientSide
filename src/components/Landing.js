@@ -10,9 +10,9 @@ class Landing extends React.Component {
   state = {
     login: false
   }
-  componentDidMount(){
+  componentDidMount() {
     setTimeout(() => {
-      Actions.home1()
+      Actions.instruction()
     }, 2000)
   }
   render() {
@@ -21,13 +21,11 @@ class Landing extends React.Component {
         <View style={styles.logoContainer}>
           <NightGuideLogo />
           <Text style={styles.title}>Night Guide</Text>
-      <NightGuideLogo />
-          <Text style={styles.title}>Night Guide</Text>
         </View>
         <View style={styles.formContainer}>
         </View>
         <View>
-          <Text style={styles.subtitle}>Build by Dungeon</Text>
+          <Text style={styles.subtitle}>Built by Dungeon</Text>
         </View>
       </View>
     )
