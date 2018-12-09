@@ -35,15 +35,17 @@ export default class App extends React.Component {
             component={Home}
             title="Home"
           />
-          {/* <Scene
-          key="instruction"
-          component={WelcomeInstruction} 
-          title="Instruction"
-        /> */}
+          <Scene
+            key="instruction"
+            component={WelcomeInstruction}
+            title="Instruction"
+          />
 
           <Scene
             key="lookout"
+            
             component={LookoutList}
+
             title="Lookout"
           />
           <Scene
@@ -69,6 +71,7 @@ export default class App extends React.Component {
           <Scene
             key="planetdetails"
             component={PlanetDetails}
+
             title="PlanetDetails"
           />
           <Scene

@@ -10,20 +10,20 @@ import Weather from './Weather'
 const NavBar = () => {
   return (
     <View style={styles.navbarContainer}>
-      <View style={styles.navitem}>
-        <Home />
+      <View style={styles.naveach} >
+        <Weather />
       </View>
-      <View style={styles.navitem}>
-        <Stars />
-      </View>
-      <View style={styles.navitem}>
-        <Planet />
-      </View>
-      <View style={styles.navitem}>
+      <View style={styles.naveach}>
         <Lookout />
       </View>
-      <View>
-        <Weather />
+      <View style={styles.naveach}>
+        <Planet />
+      </View>
+      <View style={styles.naveach}>
+        <Stars />
+      </View>
+      <View style={styles.naveach}>
+        <Home />
       </View>
     </View>
   )
@@ -33,13 +33,15 @@ export default NavBar
 
 const styles = StyleSheet.create({
   navbarContainer: {
+    flex: 1,
+    flexWrap: 'wrap',
     position: 'absolute',
     bottom: 30,
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     alignItems: 'stretch',
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
-  navitem: {
-    marginRight: 15,
+  naveach: {
+    marginRight: 15
   }
 })
