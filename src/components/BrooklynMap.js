@@ -23,19 +23,19 @@ export default class BrooklynMap extends React.Component {
       timeOut: 20000, //20sec
       maximumAge: 60 * 60 * 24 // sec min hr
     }
-    navigator.geolocation.getCurrentPosition(this.geoSuccess, this.geoFailure, geoOptions)
     this.setState({
       ready: false,
       error: null
     })
+    navigator.geolocation.getCurrentPosition(this.geoSuccess, this.geoFailure, geoOptions)
   }
 
   geoSuccess = (position) => {
     this.setState({
       ready: true,
       where: {
-        lat: Number(position.coords.latitude),
-        lng: Number(position.coords.longitude)
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
       }
     })
     console.log('currant latitude', Number(position.coords.latitude))
@@ -67,7 +67,8 @@ export default class BrooklynMap extends React.Component {
               latitude: this.state.where.lat,
               longitude: this.state.where.lng
             }}
-            pinColor="blue"
+            key={"whereamI"}
+            pinColor={"blue"}
             title={"My Current Location"}
           />)}
         <Marker
