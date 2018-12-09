@@ -26,6 +26,7 @@ export default class PlanetDetails extends React.Component {
         style={StyleSheet.absoluteFill}
       >
         <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}>
+
           <View style={styles.titlecontainer}>
             <Text
               style={styles.title}
@@ -44,17 +45,39 @@ export default class PlanetDetails extends React.Component {
               }}
             />
           </View>
-          <View style={styles.descriptioncon}>
-            <Text
-              style={styles.description}
-            >
-              {this.props.planet.location[0]}
-            </Text>
-            <Text
-              style={styles.description}
-            >
-              {this.props.planet.location[1]}
-            </Text>
+          <View style={styles.container}>
+            <View stlye={styles.rows}>
+              <View style={styles.col1}>
+                <Text
+                  style={styles.descriptiontitle}
+                >
+                  {this.props.planet.location[0]}
+                </Text>
+              </View>
+              <View style={styles.col2}>
+                <Text
+                  style={styles.descriptiontitle}
+                >
+                  {this.props.planet.location[2]}
+                </Text>
+              </View>
+            </View>
+            <View stlye={styles.rows}>
+              <View style={styles.col1}>
+                <Text
+                  style={styles.description}
+                >
+                  {this.props.planet.location[1]}
+                </Text>
+              </View>
+              <View style={styles.col2}>
+                <Text
+                  style={styles.description}
+                >
+                  {this.props.planet.location[3]}
+                </Text>
+              </View>
+            </View>
           </View>
         </ScrollView>
       </ImageBackground>
@@ -63,6 +86,13 @@ export default class PlanetDetails extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 20,
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'stretch'
+  },
   titlecontainer: {
     flex: 1,
     justifyContent: 'center',
@@ -82,12 +112,37 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   descriptioncon: {
+    marginTop: 20,
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
+    alignItems: 'stretch'
   },
   description: {
     color: '#fff',
     fontSize: 20,
     padding: 30,
-  }
+  },
+  descriptiontitle: {
+    color: '#fff',
+    fontSize: 20,
+    padding: 30,
+    fontWeight: 'bold'
+  },
+  rows: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+  col1: {
+    padding: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-start'
+  },
+  col2: {
+    padding: 10,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'flex-start'
+  },
 });
