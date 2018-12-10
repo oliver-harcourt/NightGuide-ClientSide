@@ -2,8 +2,8 @@
   "expoServerPort": 19000,
   "expoServerNgrokUrl": "https://xa-thc.anonymous.nightguide-clientside.exp.direct",
   "packagerNgrokUrl": "https://packager.xa-thc.anonymous.nightguide-clientside.exp.direct",
-  "ngrokPid": 8632,
+  "ngrokPid": 11888,
   "devToolsPort": 19002,
-  "packagerPort": 19003,
-  "packagerPid": 8618
+  "packagerPort": 19001,
+  "packagerPid": 11860
 }

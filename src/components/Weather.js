@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, ActivityIndicator, ImageBackground } from 'react-native'
-
+import LottieView from 'lottie-react-native'
 
 
 export default class App extends React.Component {
@@ -37,16 +37,18 @@ export default class App extends React.Component {
       let data = this.state.dataSource
 
       return (
-        <ImageBackground
-          source={require('../../assets/bgeffect.gif')}
-          style={StyleSheet.absoluteFill}>
+        <LottieView
+          source={require('../../assets/ani/sunrise.json')}
+          autoPlay
+          loop
+        >
           <View style={styles.container}>
             <Text style={styles.title}> {data.name}</Text>
             <Text style={styles.subtitle}>{data.sys.country}</Text>
             <Text style={styles.tempstyle}>{`${data.main.temp}°`}</Text>
             <Text style={styles.descrip}>{data.weather[0].description}</Text>
           </View>
-        </ImageBackground>
+        </LottieView>
       );
     }
   }
