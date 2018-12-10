@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet, ImageBackground } from "react-native";
+import { View, StyleSheet, ImageBackground } from "react-native";
 
 import NavBar from './Navbar/NavBar'
 import StarMap from './StarMap'
@@ -21,7 +21,6 @@ export default class Home extends React.Component {
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   container: {

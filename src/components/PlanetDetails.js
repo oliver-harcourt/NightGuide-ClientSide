@@ -18,6 +18,7 @@ export default class PlanetDetails extends React.Component {
       })
     })
   }
+  
   render() {
     const { imgWidth, imgHeight } = this.state
     return (

@@ -1,28 +1,15 @@
 import React from "react";
 import planets from '../../data/planets';
 import { Actions } from 'react-native-router-flux';
-
-import {
-  View,
-  StyleSheet
-} from 'react-native'
-
-import {
-  List,
-  ListItem
-} from 'react-native-elements'
-import PlanetDetails from "./PlanetDetails";
+import { View, StyleSheet } from 'react-native'
+import { List, ListItem } from 'react-native-elements'
 import NavBar from './Navbar/NavBar'
 
 export default class PlanetList extends React.Component {
 
-
   render() {
-
-
     return (
       <View>
-
         <List containerStyle={{ marginBottom: 0 }}>
           {
             planets.map((planet) => (

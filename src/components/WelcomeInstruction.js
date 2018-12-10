@@ -1,7 +1,7 @@
 import React from 'react'
 import Swiper from 'react-native-swiper'
 import { Actions } from 'react-native-router-flux'
-import { Text, View, StyleSheet, Button, Image, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet, Image, TouchableOpacity } from "react-native";
 
 export default () =>
   <Swiper style={styles.wrapper}
@@ -11,14 +11,13 @@ export default () =>
       <Image
         resizeMode="contain"
         source={require('../../assets/instruction/instructionOne.gif')}
-        style={{ width: "100%" }}
+        style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}
-       
+        style={styles.container}    
       >
         <View>
-          <Text style={{ fontSize: 35 }}>x</Text>
+          <Text style={styles.x}>x</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -26,14 +25,13 @@ export default () =>
       <Image
         resizeMode="contain"
         source={require('../../assets/instruction/instructionTwo.gif')}
-        style={{ width: "100%" }}
+        style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}
-       
+        style={styles.container}      
       >
         <View>
-          <Text style={{ fontSize: 35 }}>x</Text>
+          <Text style={styles.x}>x</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -41,14 +39,13 @@ export default () =>
       <Image
         resizeMode="contain"
         source={require('../../assets/instruction/instructionThree.gif')}
-        style={{ width: "100%" }}
+        style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}
-       
+        style={styles.container}      
       >
         <View>
-          <Text style={{ fontSize: 35 }}>x</Text>
+          <Text style={styles.x}>x</Text>
         </View>
       </TouchableOpacity>
     </View>
@@ -58,8 +55,7 @@ const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
     alignSelf: 'flex-end',
-    marginTop: 10,
-    marginLeft: 325,
+    marginLeft: 335,
     position: 'absolute', // add if dont work with above
   },
   slide: {
@@ -77,4 +73,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#f3a683',
     padding: 10,
   },
+  x: {
+    fontSize: 35,
+    color: 'white'
+  },
+  image: {
+    width: '100%'
+  }
 })

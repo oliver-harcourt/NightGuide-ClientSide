@@ -1,17 +1,9 @@
 import React from "react";
 import constellations from '../../data/constellations'
 import { Actions } from 'react-native-router-flux';
-
-
-import {
-  View,
-  StyleSheet
-} from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import NavBar from './Navbar/NavBar'
-import {
-  List,
-  ListItem
-} from 'react-native-elements'
+import { List, ListItem } from 'react-native-elements'
 
 export default class ConstellationList extends React.Component {
   render() {

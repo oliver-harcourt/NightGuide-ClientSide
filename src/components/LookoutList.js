@@ -7,6 +7,7 @@ import NavBar from './Navbar/NavBar'
 import Map from "./Map";
 
 export default class LookoutDetails extends React.Component {
+  
   render() {
     return (
       <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>

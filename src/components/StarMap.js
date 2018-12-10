@@ -11,7 +11,6 @@ export default class StarMap extends React.Component {
     }
 
     render() {
-
         return (
             <View style={styles.container}>
                 <WebView style={styles.webView}

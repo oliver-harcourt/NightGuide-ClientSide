@@ -40,7 +40,6 @@ export default class App extends React.Component {
     const data = this.state.dataSource;
     console.log(data);
 
-
     if (this.state.isLoading) {
       return (
         <View styles={StyleSheet.container}>
@@ -54,7 +53,6 @@ export default class App extends React.Component {
             require('../../assets/ani/sunset.json') : require('../../assets/ani/sunrise.json')}
           autoPlay
           loop
-
         >
           <View style={styles.container}>
             <Text style={styles.title}> {data.name}</Text>
@@ -63,11 +61,11 @@ export default class App extends React.Component {
             <Text style={styles.descrip}>{data.weather[0].description}</Text>
           </View>
         </LottieView>
-
       );
     }
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     justifyContent: "center",
