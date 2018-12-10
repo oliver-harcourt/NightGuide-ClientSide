@@ -1,23 +1,17 @@
 import React from "react";
-import constellations from '../../data/constellations'
+import { List, ListItem } from 'react-native-elements'
 import { Actions } from 'react-native-router-flux';
+import { View, StyleSheet } from 'react-native'
 
-
-import {
-  View,
-  StyleSheet
-} from 'react-native'
 import NavBar from './Navbar/NavBar'
-import {
-  List,
-  ListItem
-} from 'react-native-elements'
+import constellations from '../../data/constellations'
 
 export default class ConstellationList extends React.Component {
+
   render() {
     return (
       <View>
-        <List containerStyle={{ marginBottom: 20 }}>
+        <List style={styles.listContainer}>
           {
             constellations.map((constellation) => (
               <ListItem
@@ -30,7 +24,7 @@ export default class ConstellationList extends React.Component {
             ))
           }
         </List>
-        <View style={styles.container}>
+        <View style={styles.navContainer}>
           <NavBar />
         </View>
       </View>
@@ -39,9 +33,12 @@ export default class ConstellationList extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  navContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     top: 370
   },
+  listContainer: {
+    marginBottom: 20
+  }
 });

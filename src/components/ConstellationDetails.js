@@ -2,7 +2,7 @@ import React from "react";
 import { ImageBackground, View, StyleSheet, Text, Image, ScrollView } from "react-native";
 
 export default class ConstellationDetails extends React.Component {
-
+  
   render() {
     return (
       <ImageBackground

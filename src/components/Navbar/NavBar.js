@@ -38,10 +38,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 30,
     flexDirection: 'row-reverse',
-    alignItems: 'stretch',
-    justifyContent: "flex-end",
+    alignItems: 'center',
+    justifyContent: "center",
   },
   naveach: {
-    marginRight: 15
+    marginRight: 15,
+    alignItems: 'center',
   }
 })

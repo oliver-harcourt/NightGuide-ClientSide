@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, Image, Dimensions, ScrollView } from "react-native";
+import { Text, Image, Dimensions, ScrollView } from "react-native";
 
 export default class LookoutDetails extends React.Component {
+  
   render() {
     let screenWidth = Dimensions.get("window").width;
     return (
