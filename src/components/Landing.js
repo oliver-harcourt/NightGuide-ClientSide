@@ -14,7 +14,7 @@ class Landing extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       Actions.instruction()
-    }, 8500)
+    }, 7500)
   }
   render() {
     return (
