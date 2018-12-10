@@ -12,13 +12,13 @@ class Landing extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       Actions.instruction()
-    }, 7500)
+    }, 9000)
   }
 
   render() {
     return (
       <LottieView
-        source={require('../../assets/ani/landinworking.json')}
+        source={require('../../assets/ani/landingnew.json')}
         autoPlay
         loop
       >

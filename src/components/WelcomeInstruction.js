@@ -14,7 +14,7 @@ export default () =>
         style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}    
+        style={styles.container}
       >
         <View>
           <Text style={styles.x}>x</Text>
@@ -28,7 +28,7 @@ export default () =>
         style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}      
+        style={styles.container}
       >
         <View>
           <Text style={styles.x}>x</Text>
@@ -42,7 +42,7 @@ export default () =>
         style={styles.image}
       />
       <TouchableOpacity onPress={() => Actions.home()}
-        style={styles.container}      
+        style={styles.container}
       >
         <View>
           <Text style={styles.x}>x</Text>
@@ -52,6 +52,9 @@ export default () =>
   </Swiper>
 
 const styles = StyleSheet.create({
+  wrapper: {
+    backgroundColor: 'black'
+  },
   container: {
     ...StyleSheet.absoluteFillObject,
     alignSelf: 'flex-end',
