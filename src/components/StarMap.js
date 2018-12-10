@@ -31,8 +31,7 @@ const styles = StyleSheet.create({
         alignItems: 'stretch'
     },
     webView: {
-        marginBottom: -355,
-        marginTop: 0,
+        marginBottom: -385,
         backgroundColor: 'black'
     }
 });
