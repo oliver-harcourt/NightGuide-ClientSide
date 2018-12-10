@@ -4,13 +4,13 @@ import { Actions } from 'react-native-router-flux';
 import { ScrollView, StyleSheet, View } from "react-native";
 import { List, ListItem } from "react-native-elements";
 import NavBar from './Navbar/NavBar'
-import BrooklynMap from "./BrooklynMap";
+import Map from "./Map";
 
 export default class LookoutDetails extends React.Component {
   render() {
     return (
       <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>
-        <BrooklynMap />
+        <Map />
         <List containerStyle={{ marginTop: 350 }}>
           {lookouts.map(lookout => (
             <ListItem
