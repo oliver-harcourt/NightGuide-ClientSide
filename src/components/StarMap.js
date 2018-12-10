@@ -4,6 +4,7 @@ import {
     WebView,
     View
 } from 'react-native';
+import path from '../../data/uri'
 
 export default class StarMap extends React.Component {
     constructor(props) {
@@ -16,7 +17,7 @@ export default class StarMap extends React.Component {
                 <WebView style={styles.webView}
                     renderError={() => errorMessage}
                     scalesPageToFit={true}
-                    source={{ uri: 'https://virtualsky.lco.global/embed/?longitude=-119.86286000000001&latitude=34.4326&projection=polar&constellationlabels=true' }}
+                    source={{ uri: path }}
                     allowTransparency="true"
                 />
             </View>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux'
 
 import Login from './src/components/Landing'
@@ -70,7 +69,6 @@ export default class App extends React.Component {
             component={Weather}
             title="Weather"
           />
-
         </Scene>
       </Router>
     );
