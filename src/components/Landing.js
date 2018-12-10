@@ -1,7 +1,8 @@
 import React from 'react'
-import { Alert, StyleSheet, Text, View, TouchableOpacity, StatusBar } from 'react-native';
-import { Spinner } from 'native-base'
+import { StyleSheet, Text, View } from 'react-native';
+
 import { Actions } from 'react-native-router-flux'
+import LottieView from 'lottie-react-native'
 
 import NightGuideLogo from './NightGuideLogo'
 
@@ -13,21 +14,17 @@ class Landing extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       Actions.instruction()
-    }, 2000)
+    }, 12000)
   }
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.logoContainer}>
-          <NightGuideLogo />
-          <Text style={styles.title}>Night Guide</Text>
-        </View>
-        <View style={styles.formContainer}>
-        </View>
-        <View>
-          <Text style={styles.subtitle}>Built by Dungeon</Text>
-        </View>
-      </View>
+      <LottieView
+        source={require('../../assets/ani/landingtext.json')}
+        autoPlay
+        loop
+      >
+
+      </LottieView>
     )
   }
 }
