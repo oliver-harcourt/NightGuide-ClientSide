@@ -28,34 +28,42 @@ The idea of the app is to create a **"stargazing - astronomical"** style app for
 
 + As a user I want to be able to .. Find all of the best Lookout points to view stars and planets around Wellington, using cordinates and querying a Google Maps API.
 
-+ As a user I want to be able to .. Observe which constellations I can see from Wellington. 
-
-+ As a user I want to be able to .. Observe which planets I can see from Wellington
++ As a user I want to be able to .. Learn more about certain planets and constellations and get some info on when they might be seen
 
 ---
 
 
 #### Stretch
-+ As a user I want to be able to .. To log in and have a profile
 
-+ As a user I want to be able to .. Use augmented reality with the constellations and actually see them in the sky based on where they actually are!(a technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view.)
++ As a user I want to be able to .. Observe which planets and constellations I can see from Wellington on a specific night
 
-+ As a user I want to be able to .. Turn lights on and lights off as a feature
++ As a user I want to be able to .. Use augmented reality with the constellations to see image of them through camera
 
-+ As a user I want to be able to .. See the history of a few particular stars (Well knowen stars or planets)
++ As a user I want to be able to .. Depending on time of day for user, show light or dark background
 
-+ As a user I want to be able to .. See some interesting photos from NASA
++ As a user I want to be able to .. Depending on time of day and weather for user, show different background in weather view
 
-+ As a user I want to be able to .. Add my timezone to my profile
-
-+ As a user I want to be able to .. See Satellites   
-
-+ As a user I want to be able to .. Search for things (specific planets or constellations ect..) 
- 
- + As a user I want to be able to .. Post about meetups and find local meetups in my area.
  ----
 
  ## Views (Client Side)
+
+  | components | purpose |
+  | --- | --- |
+  | Landing | View of opening page with logo |
+  | NightGuideLogo | Night guide logo svg |
+  | InstructionContainer | Holds the Menu and Welcome instructions |
+  | WelcomeInstruction  | View with welcome message on first open of app |
+  | MenuInstruction | View with menu instructions (use of app) on first open on app |
+  | Home | View to contain initial page with nav bar buttons |
+  | NavBar | View for navigation buttons |
+  | Weather  | View to see weather in your area for stargazing |
+  | ConstellationList | Shows a list of common constellations |
+  | ConstellationDetails | Shows more info on specific constellation |
+  | PlanetList | Shows list of planets in solar system |
+  | PlanetDetails  | Shows more info on specific planet |
+  | LookoutList | Shows specific lookouts in your area and on a map |
+  | LookoutDetails | Shows more details on the specific lookout |
+
   | name | purpose |
   | --- | --- |
   | Weather query API| Search for your local weather |
