@@ -11,6 +11,7 @@ import { ImageBackground, View, StyleSheet, Text, Button, Image, Dimensions, Scr
 
 var styles = {
   wrapper: {
+    backgroundColor: 'black'
   },
   slide1: {
     flex: 1,
@@ -32,7 +33,7 @@ var styles = {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#6c5ce7' 
+    backgroundColor: '#6c5ce7'
   },
   text: {
     color: '#fff',
