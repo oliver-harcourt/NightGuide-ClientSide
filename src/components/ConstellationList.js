@@ -10,6 +10,7 @@ export default class ConstellationList extends React.Component {
 
   render() {
     return (
+
       <View>
         <List style={styles.listContainer}>
           {
