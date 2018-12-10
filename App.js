@@ -37,7 +37,7 @@ export default class App extends React.Component {
           />
           <Scene
             key="instruction"
-            component={WelcomeInstruction}
+            component={ARView}
             title="Instruction"
           />
 
