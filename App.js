@@ -30,7 +30,6 @@ export default class App extends React.Component {
           />
           <Scene
             key="home"
-
             component={Home}
             title="Home"
           />
