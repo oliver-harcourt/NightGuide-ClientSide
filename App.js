@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { Scene, Router } from 'react-native-router-flux'
 
 import Login from './src/components/Landing'
@@ -12,6 +11,7 @@ import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
+import CameraExample from './src/components/CameraExample';
 
 export default class App extends React.Component {
   render() {
@@ -30,16 +30,16 @@ export default class App extends React.Component {
             title="Welcome"
           />
           <Scene
+            key="camera"
+
+            component={CameraExample}
+            title="Camera"
+          />
+          <Scene
             key="home"
             component={Home}
             title="Home"
           />
-          <Scene
-            key="instruction"
-            component={WelcomeInstruction}
-            title="Instruction"
-          />
-
           <Scene
             key="lookout"
             component={LookoutList}
@@ -76,7 +76,6 @@ export default class App extends React.Component {
             component={Weather}
             title="Weather"
           />
-
         </Scene>
       </Router>
     );

@@ -1,0 +1,1 @@
+export default path = 'https://virtualsky.lco.global/embed/?longitude=-119.86286000000001&latitude=34.4326&projection=polar&constellationlabels=true'
