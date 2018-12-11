@@ -67,34 +67,13 @@ The idea of the app is to create a **"stargazing - astronomical"** style app for
   | name | purpose |
   | --- | --- |
   | Weather query API| Search for your local weather |
-  | Query Lookout Points API | Search for local Lookout Points |
-  | Query constellations API | Search for constellations in your area |
-  | Query planet API  | Search for planets that you can see in your area |
+  | hardcode Lookout Points API | Search for local Lookout Points |
+  | Hardcode constellations API | Search for constellations in your area |
+  | hardcode planet API  | Search for planets that you can see in your area |
   | ###  | #### |
   | ## | ###  |
  
 ---
-
-## API (Client - Server)
-
-| Method | Endpoint | Protected | Usage | Response |
-| --- | --- | --- | --- | --- |
-| Get | /api/lookouts | No | Get the list of lookout points | Array of Objects (object = coords) |
-| Get | /api/lookouts/:id | No | Get the specific lookout point based on the ID | Object (object = coords) |
-| Get | /api/constellations | No | Get the list of constellations points | Array of Objects (object = coords) |
-| Get | /api/constellations/:id | No | Get the specific constellation based on the ID| Object (object = coords) |
-| Get | /api/planets | No |Get the list of planets points| Object (object = coords) |
-| Get | /api/planets/:id | No | Get the specific planets based on the ID| Object (object = coords) |
-| Get | /api/weather | No | Get an object with an array of current weather properties based on what city you search.. | Array of Objects (object = coords) |
----
-
-### lookout backend knex
-  | Column Name | Data Type | Purpose |
-  | --- | --- | --- |
-  | id | Integer | Unique identifier for each lookout point |
-  | name | string | what is the name of the lookout point |
-  | location | string |what is the location of the lookout point |
-  | description | string | small description of the lookout point.. |
 
 
 
