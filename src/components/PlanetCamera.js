@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Image } from 'react-native';
 import { Camera, Permissions } from 'expo';
 
-export default class CameraExample extends React.Component {
+export default class PlanetCamera extends React.Component {
     state = {
         hasCameraPermission: null,
         type: Camera.Constants.Type.back,
