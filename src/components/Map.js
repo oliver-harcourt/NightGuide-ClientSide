@@ -1,8 +1,6 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet } from "react-native";
 import MapView, { Marker } from "react-native-maps";
-
-
 
 export default class Map extends React.Component {
   constructor(props) {
@@ -51,7 +49,6 @@ export default class Map extends React.Component {
   }
 
   render() {
-    console.log('map rendering after state changed')
     return (
       <MapView
         style={styles.map}
@@ -63,7 +60,6 @@ export default class Map extends React.Component {
           longitudeDelta: 0.0421
         }}
       >
-        {console.log('rendering new lat and lng? >>>', this.state.where.lat, this.state.where.lng)}
         {this.state.ready &&
           (<Marker
             coordinate={{
