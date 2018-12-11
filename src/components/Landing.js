@@ -18,7 +18,7 @@ class Landing extends React.Component {
   render() {
     return (
       <LottieView
-        source={require('../../assets/ani/landingnew.json')}
+        source={require('../../assets/ani/landinglogo.json')}
         autoPlay
         loop
       >
