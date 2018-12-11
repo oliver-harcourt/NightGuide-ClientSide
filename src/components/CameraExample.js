@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, Image } from 'react-native';
 import { Camera, Permissions } from 'expo';
 
 export default class CameraExample extends React.Component {
@@ -11,6 +11,7 @@ export default class CameraExample extends React.Component {
     async componentDidMount() {
         const { status } = await Permissions.askAsync(Permissions.CAMERA);
         this.setState({ hasCameraPermission: status === 'granted' });
+
     }
 
     render() {
@@ -42,6 +43,11 @@ export default class CameraExample extends React.Component {
                                             : Camera.Constants.Type.back,
                                     });
                                 }}>
+                                <View>
+                                    <Image
+                                        source={require('../../assets/constellation-images/Leo.png')}
+                                    />
+                                </View>
                                 <Text
                                     style={{ fontSize: 18, marginBottom: 10, color: 'white' }}>
                                     {' '}Flip{' '}
