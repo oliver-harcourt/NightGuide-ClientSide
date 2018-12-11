@@ -1,5 +1,6 @@
 import React from "react";
-import { View, StyleSheet, ImageBackground } from "react-native";
+import { Text, View, StyleSheet, ImageBackground } from "react-native";
+import { Actions } from 'react-native-router-flux'
 
 import NavBar from './Navbar/NavBar'
 import StarMap from './StarMap'
@@ -17,6 +18,7 @@ export default class Home extends React.Component {
             <NavBar style={styles.navBar} />
           </View>
         </View>
+        <Text style={{ color: 'white' }} onPress={() => Actions.camera()}>camera</Text>
       </ImageBackground>
     );
   }

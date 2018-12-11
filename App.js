@@ -11,6 +11,7 @@ import Weather from './src/components/Weather'
 import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
+import CameraExample from './src/components/CameraExample';
 
 export default class App extends React.Component {
   render() {
@@ -27,6 +28,11 @@ export default class App extends React.Component {
             key="instruction"
             component={WelcomeInstruction}
             title="Welcome"
+          />
+          <Scene
+            key="camera"
+            component={CameraExample}
+            title="Camera"
           />
           <Scene
             key="home"
