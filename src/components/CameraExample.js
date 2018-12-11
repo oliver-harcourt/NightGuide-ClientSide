@@ -45,7 +45,14 @@ export default class CameraExample extends React.Component {
                                 }}>
                                 <View>
                                     <Image
-                                        source={require('../../assets/constellation-images/Leo.png')}
+                                        source={{ uri: 'https://i.gifer.com/XVoD.gif' }}
+                                        style={{
+                                            marginLeft: 200,
+                                            marginBottom: 200,
+                                            width: 100,
+                                            height: 100
+                                        }}
+                                    // source={require('../../assets/constellation-images/Leo.png')}
                                     />
                                 </View>
                                 <Text
