@@ -106,4 +106,3 @@ const styles = StyleSheet.create({
     left: 150
   }
 });
-//this.isNearlySunset && require("../../assets/bgeffect.gif")

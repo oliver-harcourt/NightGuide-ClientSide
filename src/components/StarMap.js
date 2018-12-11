@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import path from '../../data/uri'
 
+
 export default class StarMap extends React.Component {
     constructor(props) {
         super(props);
@@ -14,6 +15,7 @@ export default class StarMap extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+
                 <WebView style={styles.webView}
                     renderError={() => errorMessage}
                     scalesPageToFit={true}
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
         alignItems: 'stretch'
     },
     webView: {
-        marginBottom: -500,
+        marginBottom: -900,
         backgroundColor: 'black'
     }
 });

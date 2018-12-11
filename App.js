@@ -31,12 +31,12 @@ export default class App extends React.Component {
           />
           <Scene
             key="camera"
-
             component={CameraExample}
             title="Camera"
           />
           <Scene
             key="home"
+
             component={Home}
             title="Home"
           />
