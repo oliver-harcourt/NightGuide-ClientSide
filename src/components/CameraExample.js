@@ -45,10 +45,6 @@ export default class CameraExample extends React.Component {
                                 }}>
                                 <View>
                                     <Image
-                                        source={{ uri: 'https://i.gifer.com/XVoD.gif' }}
-                                        style={{
-                                            marginLeft: 200,
-                                            marginBottom: 200,
                                         source={{
                                             uri: 'https://i.gifer.com/XVoD.gif'
                                         }}

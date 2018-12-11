@@ -32,7 +32,6 @@ export default class App extends React.Component {
           />
           <Scene
             key="camera"
-
             component={CameraExample}
             title="Camera"
           />
@@ -74,7 +73,7 @@ export default class App extends React.Component {
           <Scene
             key="planetcamera"
             component={PlanetCamera}
-            title="PlanetDetails"
+            title="Planet Camera"
           />
           <Scene
             key="weather"
