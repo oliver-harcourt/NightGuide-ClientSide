@@ -18,9 +18,9 @@ export default class Map extends React.Component {
   componentDidMount() {
     let geoOptions = {
       enableHigthAccuracy: true, //able to connect location on phone
-      // timeout: 20000, //20sec
-      // maximumAge: 60 * 60 * 24 // sec min hr
-      maximumAge: 0 // sec min hr
+      timeout: 20000, //20sec
+      maximumAge: 60 * 60 * 24 // sec min hr
+      // maximumAge: 0 // sec min hr
     }
     this.setState({
       ready: false,
@@ -30,7 +30,6 @@ export default class Map extends React.Component {
   }
 
   geoSuccess = (position) => {
-    console.log(position)
     this.setState({
       ready: true,
       where: {
@@ -38,8 +37,6 @@ export default class Map extends React.Component {
         lng: position.coords.longitude
       }
     })
-    console.log('currant latitude', Number(position.coords.latitude))
-    console.log('current longitude', Number(position.coords.longitude))
   }
 
   geoFailure = (err) => {
@@ -47,7 +44,7 @@ export default class Map extends React.Component {
       error: err.message
     })
   }
-
+  
   render() {
     return (
       <MapView
@@ -90,6 +87,7 @@ export default class Map extends React.Component {
     );
   }
 }
+
 const styles = StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,

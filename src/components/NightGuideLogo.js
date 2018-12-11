@@ -1,6 +1,5 @@
 import React from 'react'
-import { View, StyleSheet, Dimensions, Text } from 'react-native'
-
+import { View, Dimensions, Text } from 'react-native'
 import { Svg } from 'expo';
 
 const { G, Path, Defs, Ellipse, Circle } = Svg;

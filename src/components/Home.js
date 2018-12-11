@@ -6,6 +6,7 @@ import NavBar from './Navbar/NavBar'
 import StarMap from './StarMap'
 
 export default class Home extends React.Component {
+  
   render() {
     return (
       <ImageBackground

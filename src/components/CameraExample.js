@@ -49,6 +49,32 @@ export default class CameraExample extends React.Component {
                                         style={{
                                             marginLeft: 200,
                                             marginBottom: 200,
+                                        source={{
+                                            uri: 'https://i.gifer.com/XVoD.gif'
+                                        }}
+                                        style={{
+                                            marginLeft: 200,
+                                            marginBottom: 0,
+                                            width: 100,
+                                            height: 100
+                                        }}
+                                    // source={require('../../assets/constellation-images/Leo.png')}
+                                    />
+
+                                </View>
+                                <Text style={{
+                                    marginLeft: 200,
+                                    marginTop: 20,
+                                    width: 100,
+                                    height: 100
+                                }}
+                                >Moon</Text>
+                                <View>
+                                    <Image
+                                        source={{ uri: 'http://revision.ru/images/authors/6942/earth.gif' }}
+                                        style={{
+                                            marginLeft: 300,
+                                            marginBottom: 250,
                                             width: 100,
                                             height: 100
                                         }}
