@@ -38,8 +38,6 @@ export default class App extends React.Component {
 
   render() {
     const data = this.state.dataSource;
-    console.log(data);
-
     if (this.state.isLoading) {
       return (
         <View styles={StyleSheet.container}>
