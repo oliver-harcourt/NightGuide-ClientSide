@@ -1,5 +1,6 @@
 import React from "react";
-import { ImageBackground, View, StyleSheet, Text, Image, Dimensions, ScrollView } from "react-native";
+import { ImageBackground, TouchableOpacity, View, StyleSheet, Text, Image, Dimensions, ScrollView } from "react-native";
+import { Actions } from 'react-native-router-flux';
 
 export default class PlanetDetails extends React.Component {
   state = {
@@ -27,7 +28,7 @@ export default class PlanetDetails extends React.Component {
         style={StyleSheet.absoluteFill}
       >
         <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}>
-
+        <TouchableOpacity onPress={() => Actions.planetcamera({ planet: this.props.planet })}>
           <View style={styles.titlecontainer}>
             <Text
               style={styles.title}
@@ -35,6 +36,7 @@ export default class PlanetDetails extends React.Component {
               ____ {this.props.planet.name} ____
             </Text>
           </View>
+          </TouchableOpacity>
           <View style={styles.imgcontainer}>
             <Image
               resizeMode="cover"
