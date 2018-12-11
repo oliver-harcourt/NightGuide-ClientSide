@@ -1,5 +1,11 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "jest": {
+    "preset": "jest-react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|NightGuide-ClientSide|../assets/planeticon/mercury.png)/)"
+    ]
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -7,12 +13,10 @@
     "eject": "expo eject",
     "test": "jest"
   },
-  "jest": {
-    "preset": "jest-react-native"
-  },
   "dependencies": {
     "expo": "^31.0.2",
     "lottie-react-native": "^2.5.10",
+    "mockery": "^2.1.0",
     "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
