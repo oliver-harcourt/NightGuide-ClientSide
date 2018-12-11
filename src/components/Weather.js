@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, ActivityIndicator } from 'react-native'
+
 import LottieView from 'lottie-react-native'
 
 export default class App extends React.Component {
@@ -13,8 +14,8 @@ export default class App extends React.Component {
     };
 
     this.isNearlySunset = this.isNearlySunset.bind(this)
-
   }
+
   componentDidMount() {
     return fetch(
       "http://api.openweathermap.org/data/2.5/weather?q=Wellington,NZ&appid=6077bc0c24cd3abfdf63f56070c1d010&units=metric"

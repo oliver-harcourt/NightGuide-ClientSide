@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-    StyleSheet,
-    WebView,
-    View
-} from 'react-native';
+import { StyleSheet, WebView, View} from 'react-native';
+
 import path from '../../data/uri'
 
 
