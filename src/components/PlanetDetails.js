@@ -27,8 +27,11 @@ export default class PlanetDetails extends React.Component {
         style={StyleSheet.absoluteFill}
       >
         <ScrollView maximumZoomScale={3} minimumZoomScale={0.8}>
+
           <View style={styles.titlecontainer}>
-            <Text style={styles.title}>
+            <Text
+              style={styles.title}
+            >
               ____ {this.props.planet.name} ____
             </Text>
           </View>
@@ -36,7 +39,11 @@ export default class PlanetDetails extends React.Component {
             <Image
               resizeMode="cover"
               source={{ uri: this.props.planet.image }}
-              style={styles.image}
+              style={{
+                width: imgWidth,
+                height: imgHeight,
+                marginTop: 20
+              }}
             />
           </View>
           <View style={styles.container}>
@@ -104,11 +111,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
-  },
-  image: {
-    width: imgWidth,
-    height: imgHeight,
-    marginTop: 20
   },
   descriptioncon: {
     marginTop: 20,
