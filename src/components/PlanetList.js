@@ -1,9 +1,10 @@
 import React from "react";
-import planets from '../../data/planets';
 import { Actions } from 'react-native-router-flux';
 import { View, StyleSheet } from 'react-native'
 import { List, ListItem } from 'react-native-elements'
+
 import NavBar from './Navbar/NavBar'
+import planets from '../../data/planets';
 
 export default class PlanetList extends React.Component {
 
@@ -38,4 +39,3 @@ const styles = StyleSheet.create({
     top: 320
   },
 });
-
