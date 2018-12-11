@@ -21,7 +21,7 @@ export default class App extends React.Component {
           <Scene
             key="login"
             component={Login}
-            initial
+
             hideNavBar={true}
           />
           <Scene
@@ -31,7 +31,7 @@ export default class App extends React.Component {
           />
           <Scene
             key="camera"
-
+            initial
             component={CameraExample}
             title="Camera"
           />
