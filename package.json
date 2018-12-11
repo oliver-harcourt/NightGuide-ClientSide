@@ -1,14 +1,22 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "jest": {
+    "preset": "jest-react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|NightGuide-ClientSide|../assets/planeticon/mercury.png)/)"
+    ]
+  },
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
     "expo": "^31.0.2",
     "lottie-react-native": "^2.5.10",
+    "mockery": "^2.1.0",
     "native-base": "^2.8.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
@@ -19,7 +27,14 @@
     "react-navigation": "^3.0.5"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-jest": "^23.6.0",
+    "babel-preset-expo": "^5.0.0",
+    "babel-preset-react-native": "^4.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "^16.6.3"
   },
   "private": true
 }
