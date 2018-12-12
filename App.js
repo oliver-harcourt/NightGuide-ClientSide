@@ -22,7 +22,7 @@ export default class App extends React.Component {
           <Scene
             key="login"
             component={Login}
-
+            initial
             hideNavBar={true}
           />
           <Scene
@@ -42,7 +42,6 @@ export default class App extends React.Component {
           />
           <Scene
             key="lookout"
-            initial
             component={LookoutList}
             title="Lookout"
           />
