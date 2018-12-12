@@ -52,7 +52,7 @@ export default class Map extends React.Component {
         style={styles.map}
         showsMyLocationButton={true}
         showsUserLocation={true}
-        followsUserLocation={true}
+        showsCompass={true}
         initialRegion={{
           latitude: -41.310868,
           longitude: 174.744861,
