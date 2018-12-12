@@ -37,13 +37,11 @@ export default class App extends React.Component {
           />
           <Scene
             key="home"
-
             component={Home}
             title="Home"
           />
           <Scene
             key="lookout"
-            initial
             component={LookoutList}
             title="Lookout"
           />
