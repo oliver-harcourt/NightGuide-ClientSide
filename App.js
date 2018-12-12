@@ -12,6 +12,7 @@ import PlanetList from './src/components/PlanetList'
 import PlanetDetails from './src/components/PlanetDetails'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
 import CameraExample from './src/components/CameraExample';
+import PlanetCamera from './src/components/PlanetCamera'
 
 export default class App extends React.Component {
   render() {
@@ -21,7 +22,7 @@ export default class App extends React.Component {
           <Scene
             key="login"
             component={Login}
-            initial
+
             hideNavBar={true}
           />
           <Scene
@@ -31,7 +32,6 @@ export default class App extends React.Component {
           />
           <Scene
             key="camera"
-
             component={CameraExample}
             title="Camera"
           />
@@ -42,6 +42,7 @@ export default class App extends React.Component {
           />
           <Scene
             key="lookout"
+            initial
             component={LookoutList}
             title="Lookout"
           />
@@ -68,8 +69,12 @@ export default class App extends React.Component {
           <Scene
             key="planetdetails"
             component={PlanetDetails}
-
             title="PlanetDetails"
+          />
+          <Scene
+            key="planetcamera"
+            component={PlanetCamera}
+            title="Planet Camera"
           />
           <Scene
             key="weather"

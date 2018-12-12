@@ -4,7 +4,8 @@ module.exports = [
     image: "https://tinyurl.com/keoyt3k",
     description: "Mercury is the smallest and innermost planet in the Solar System. Its orbital period around the Sun of 87.97 days is the shortest of all the planets in the Solar System. It is named after the Roman deity Mercury, the messenger of the gods.",
     icon: require('../assets/planeticon/mercury.png'),
-    location: ["Right Ascension", "15h 41m 48.5s", "Declination", "-16° 55' 12.3"]
+    location: ["Right Ascension", "15h 41m 48.5s", "Declination", "-16° 55' 12.3"],
+    gif: 'http://bestanimations.com/Earth&Space/Planets/mercury-planet-animation-5.gif'
   },
   {
     name: "Venus",
@@ -18,14 +19,16 @@ module.exports = [
     image: "https://tinyurl.com/ybrkrwd5",
     description: "The Moon is an astronomical body that orbits planet Earth and is Earth's only permanent natural satellite. ... After the Sun, the Moon is the second-brightest regularly visible celestial object in Earth's sky.",
     icon: require('../assets/planeticon/moon.png'),
-    location: ["Right Ascension", "15h 44m 23s", "Declination", "-15° 13’ 12"]
+    location: ["Right Ascension", "15h 44m 23s", "Declination", "-15° 13’ 12"],
+    gif: 'https://i.gifer.com/XVoD.gif'
   },
   {
     name: "Mars",
     image: "https://tinyurl.com/y9zh5tan",
     description: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war, and is often referred to as the Red Planet",
     icon: require('../assets/planeticon/mars.png'),
-    location: ["Right Ascension", "22h 56m 36s", "Declination", "-07° 49’ 37”"]
+    location: ["Right Ascension", "22h 56m 36s", "Declination", "-07° 49’ 37”"],
+    gif: 'https://media3.giphy.com/media/YvfgPjYSdXKLK/giphy.gif?cid=3640f6095c0f1df653434774677a173e'
   },
   {
     name: "Jupiter",
@@ -53,6 +56,7 @@ module.exports = [
     image: "https://tinyurl.com/ydhdfk67",
     description: "Neptune is the eighth and farthest known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet.",
     icon: require('../assets/planeticon/neptune.png'),
-    location: ["Right Ascension", "23h 00m 33s", "Declination", "-07° 24’ 12”"]
+    location: ["Right Ascension", "23h 00m 33s", "Declination", "-07° 24’ 12”"],
+    gif: 'http://projets.rsight.net/pride/1462450021163.gif'
   }
 ];
