@@ -39,7 +39,6 @@ export default class App extends React.Component {
 
   render() {
     const data = this.state.dataSource;
-
     if (this.state.isLoading) {
       return (
         <View styles={StyleSheet.container}>
@@ -108,4 +107,3 @@ const styles = StyleSheet.create({
     left: 150
   }
 });
-//this.isNearlySunset && require("../../assets/bgeffect.gif")
