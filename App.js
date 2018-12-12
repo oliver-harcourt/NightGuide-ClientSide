@@ -13,7 +13,6 @@ import PlanetDetails from './src/components/PlanetDetails'
 import WelcomeInstruction from './src/components/WelcomeInstruction'
 import CameraExample from './src/components/CameraExample';
 import PlanetCamera from './src/components/PlanetCamera'
-import { EADDRINUSE, DH_UNABLE_TO_CHECK_GENERATOR } from 'constants';
 
 export default class App extends React.Component {
   render() {
