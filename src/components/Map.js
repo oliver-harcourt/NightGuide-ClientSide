@@ -44,11 +44,12 @@ export default class Map extends React.Component {
       error: err.message
     })
   }
-  
+
   render() {
     return (
       <MapView
         style={styles.map}
+        showsMyLocationButton={true}
         showsUserLocation={true}
         initialRegion={{
           latitude: -41.310868,

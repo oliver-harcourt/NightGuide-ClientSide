@@ -8,12 +8,12 @@ import NavBar from './Navbar/NavBar'
 import Map from "./Map";
 
 export default class LookoutDetails extends React.Component {
-  
+
   render() {
     return (
-      <ScrollView maximumZoomScale={3} minimumZoomScale={0.2}>
+      <ScrollView maximumZoomScale={3} minimumZoomScale={0.2} >
         <Map />
-        <List style={styles.listContainer}>
+        <List containerStyle={styles.listContainer}>
           {lookouts.map(lookout => (
             <ListItem
               onPress={() => Actions.lookoutdetails({ lookout: lookout })} //first lookout is the lookout in {this.props.lookout.name}lookoutdetail
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
     top: 235
   },
   listContainer: {
-    marginTop: 350 
+    marginTop: 350
   }
 });
