@@ -146,3 +146,24 @@ yarn h:rollback
   - or -
 npm run h:rollback
 ```
+## Intro
+
+A long time ago in a galaxy far, far away....
+
+*Night guide logo*
+
+It was a dark time for students in Eda,
+Although ross had guided us through the daytime,
+the curriculum had destroyed our spirits and
+the nights looked bleak.
+
+Evading the dreaded react and redux, a group of
+rebel students, led by Sungmi,
+establlished a new secret base, the dungeon  ,
+located in the remote lecture room ... 
+
+Over the past 8 days the rebel students fought 
+to establish a powerful night time guide, used to overcome 
+those bleak nights. 
+
+Welcome to Night Guide... 
